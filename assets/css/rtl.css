@@ -1,0 +1,249 @@
+
+
+.rtl {
+  direction: rtl; 
+}
+
+.ltr {
+  direction: ltr; 
+}
+
+.rtl .pull-left{
+  float: right;
+}
+
+.rtl .pull-right{
+  float: left;
+}
+
+.rtl .main-menu .navigation > li{
+  float: right;
+}
+
+.rtl .main-menu{
+  float: right;
+}
+
+.rtl .cta-section{
+  text-align: right;
+}
+
+.rtl .main-menu .navigation > li:first-child{
+  margin-left: 15px !important;
+  margin-right: 0px;
+}
+
+.rtl .main-menu .navigation > li:last-child{
+  margin-right: 15px !important;
+  margin-left: 0px;
+}
+
+.rtl .main-menu .navigation > li > ul > li > a, 
+.rtl .main-menu .navigation > li > .megamenu li > a{
+  text-align: right;
+}
+
+.rtl .main-menu .navigation li.dropdown .megamenu li h4{
+  text-align: right;
+}
+
+.rtl .main-menu .navigation > li > ul > li > ul > li > a{
+  text-align: right;
+}
+
+.rtl .main-menu .navigation > li > ul > li.dropdown > a:after{
+  right: inherit;
+  left: 20px;
+  content: "\f104";
+}
+
+.rtl .mobile-menu{
+  text-align: right;
+}
+
+.rtl .mobile-menu .nav-logo{
+  text-align: right;
+}
+
+.rtl .mobile-menu .navigation li > a:before{
+  left: inherit;
+  right: 0px;
+}
+
+.rtl .mobile-menu .navigation li.dropdown .dropdown-btn{
+  right: inherit;
+  left: 6px;
+}
+
+.rtl .mobile-menu .navigation li.dropdown .dropdown-btn.open{
+  transform: rotate(-90deg);
+}
+
+.rtl .owl-carousel{
+  direction: ltr;
+}
+
+.rtl .header-top .right-column .option-box{
+  margin-right: : 0px;
+  margin-left: 90px;
+}
+
+.rtl .header-top .right-column .option-box ul li a{
+  text-align: right;
+}
+
+.rtl .nice-select .option{
+  text-align: right;
+}
+
+.rtl .header-upper .info-list li.place-box{
+  margin-right: 0px;
+  margin-left: 100px;
+  text-align: right;
+  padding-left: 0px;
+  padding-right: 45px;
+}
+
+.rtl .header-upper .info-list li.place-box i{
+  left: inherit;
+  right: 0px;
+}
+
+.rtl .header-upper .info-list li{
+  margin-right: 0px;
+  margin-left: 50px;
+}
+
+.rtl .main-header .social-links li{
+  margin-right: 0px;
+  margin-left: 25px;
+}
+
+.rtl .main-header .nav-right .social-links{
+  margin-right: 0px;
+  margin-left: 35px;
+}
+
+.rtl .main-header .nav-right{
+  padding-left: 0px;
+  padding-right: 35px;
+}
+
+.rtl .main-header .nav-right:before{
+  left: inherit;
+  right: 0px;
+}
+
+.rtl .banner-carousel .content-box{
+  text-align: right;
+}
+
+.rtl .about-section .content_block_1 .content-box{
+  text-align: right;
+}
+
+.rtl .content_block_1 .content-box .inner-box{
+  padding-left: 0px;
+  padding-right: 300px;
+}
+
+.rtl .content_block_1 .content-box .inner-box .image-box{
+  left: inherit;
+  right: 0px;
+}
+
+.rtl .content_block_1 .content-box .inner-box .inner h5{
+  padding-left: 0px;
+  padding-right: 70px;
+}
+
+.rtl .content_block_1 .content-box .inner-box .inner h5 i{
+  left: inherit;
+  right: 0px;
+}
+
+.rtl .image_block_1 .image-box{
+  margin-right: 0px;
+  margin-left: 100px;
+}
+
+.rtl .content_block_2 .content-box{
+  text-align: right;
+}
+
+.rtl .content_block_2 .content-box .text h3{
+  padding-left: 0px;
+  padding-right: 20px;
+}
+
+.rtl .content_block_2 .content-box .text h3:before{
+  left: inherit;
+  right: 0px;
+}
+
+.rtl .content_block_3 .content-box{
+  text-align: right;
+}
+
+.rtl .content_block_4 .content-box{
+  text-align: right;
+}
+
+.rtl .skills-section .image_block_2 .image-box{
+  margin-right: 0px;
+  margin-left: 100px;
+}
+
+.rtl .team-block-one .inner-box .text{
+  text-align: right;
+}
+
+.rtl .team-block-one .inner-box .text .social-links li{
+  float: right;
+  margin-right: 0px;
+  margin-left: 15px;
+}
+
+.rtl .cta-section .btn-box .theme-btn.btn-one{
+  margin-right: 0px;
+  margin-left: 7px;
+}
+
+.rtl .news-block-one .inner-box .lower-content{
+  text-align: right;
+}
+
+.rtl .news-block-one .inner-box .lower-content .info li{
+  float: right;
+  margin-right: 0px;
+  margin-left: 3px;
+}
+
+.rtl .footer-top .text h3{
+  text-align: right;
+}
+
+.rtl .main-footer .widget-section{
+  text-align: right;
+}
+
+.rtl .main-footer .widget-section .contact-widget .info-list li{
+  padding-left: 0px;
+  padding-right: 100px;
+}
+
+.rtl .main-footer .widget-section .contact-widget .info-list li h6{
+  left: inherit;
+  right: 0px;
+}
+
+.rtl .main-footer .widget-section .logo-widget .social-links li{
+  float: right;
+  margin-right: 0px;
+  margin-left: 50px;
+}
+
+.rtl .scroll-top{
+  right: inherit;
+  left: 30px;
+}

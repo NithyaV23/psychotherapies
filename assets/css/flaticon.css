@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("../fonts/flaticon30a1.ttf?8366169f1ebd44113a8688ae9b8c54ed") format("truetype"),
+url("../fonts/flaticon30a1.woff?8366169f1ebd44113a8688ae9b8c54ed") format("woff"),
+url("../fonts/flaticon30a1.woff2?8366169f1ebd44113a8688ae9b8c54ed") format("woff2"),
+url("../fonts/flaticon30a1.eot?8366169f1ebd44113a8688ae9b8c54ed#iefix") format("embedded-opentype"),
+url("../fonts/flaticon30a1.svg?8366169f1ebd44113a8688ae9b8c54ed#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-down-arrow:before {
+    content: "\f101";
+}
+.flaticon-angle-arrow-down:before {
+    content: "\f102";
+}
+.flaticon-dollar:before {
+    content: "\f103";
+}
+.flaticon-dollar-symbol:before {
+    content: "\f104";
+}
+.flaticon-lock:before {
+    content: "\f105";
+}
+.flaticon-secured-lock:before {
+    content: "\f106";
+}
+.flaticon-maps-and-flags:before {
+    content: "\f107";
+}
+.flaticon-location:before {
+    content: "\f108";
+}
+.flaticon-location-1:before {
+    content: "\f109";
+}
+.flaticon-bag:before {
+    content: "\f10a";
+}
+.flaticon-add:before {
+    content: "\f10b";
+}
+.flaticon-left-arrow:before {
+    content: "\f10c";
+}
+.flaticon-right-arrow:before {
+    content: "\f10d";
+}
+.flaticon-play:before {
+    content: "\f10e";
+}
+.flaticon-play-button:before {
+    content: "\f10f";
+}
+.flaticon-brain:before {
+    content: "\f110";
+}
+.flaticon-brain-1:before {
+    content: "\f111";
+}
+.flaticon-quote:before {
+    content: "\f112";
+}
+.flaticon-close:before {
+    content: "\f113";
+}
+.flaticon-right-quote:before {
+    content: "\f114";
+}
+.flaticon-tick:before {
+    content: "\f115";
+}
+.flaticon-checked:before {
+    content: "\f116";
+}
+.flaticon-checked-1:before {
+    content: "\f117";
+}
+.flaticon-cancel:before {
+    content: "\f118";
+}
+.flaticon-close-1:before {
+    content: "\f119";
+}
+.flaticon-cancel-1:before {
+    content: "\f11a";
+}
+.flaticon-cancel-2:before {
+    content: "\f11b";
+}
+.flaticon-play-button-1:before {
+    content: "\f11c";
+}
