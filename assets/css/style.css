@@ -2124,7 +2124,7 @@ div#mCSB_1_container{
 
 .service-block-one .inner-box h3 a{
   display: inline-block;
-  color: #6589b9;
+  color: #ffffff;
 }
 
 .service-block-one .inner-box:hover h3 a{
@@ -2141,6 +2141,7 @@ div#mCSB_1_container{
 }
 
 .service-block-one .inner-box:hover .link a{
+  color: #ffffff;
 
 }
 
@@ -2835,7 +2836,7 @@ div#mCSB_1_container{
 
 .main-footer{
   position: relative;
-  background-color: #202135;
+  background-color: #2A2D45;
 }
 
 .footer-top{
@@ -2969,8 +2970,8 @@ div#mCSB_1_container{
 .main-footer .widget-section .contact-widget{
   position: relative;
   display: block;
-  background-color: #232438;
-  padding: 64px 30px 61px 30px;
+  background-color: #2A2D45;
+  padding:  30px 61px 30px;
 }
 
 .main-footer .widget-section .contact-widget .info-list li{

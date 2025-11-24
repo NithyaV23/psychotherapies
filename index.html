@@ -27,6 +27,88 @@
 <link href="assets/css/color.css" rel="stylesheet">
 <link href="assets/css/style.css" rel="stylesheet">
 <link href="assets/css/responsive.css" rel="stylesheet">
+<style>
+    
+    .footer-widget .links-list {
+    display: flex;
+    flex-direction: column; /* force single column */
+}
+
+.footer-widget .links-list li {
+    list-style: none;
+    margin-bottom: 10px;
+    width: 100%;                /* ensures full width */
+    white-space: nowrap;        /* text will not go to new line */
+}
+
+.footer-widget .links-list li a {
+    display: inline-block;
+}
+
+    .header-upper {
+    width: 100%;
+    background-image: url("/mnt/data/WhatsApp Image 2025-11-22 at 13.22.55_792eb32a.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Logo */
+.logo-box img {
+    height: 80px;
+    width: auto;
+}
+
+/* Right Info */
+.header-info .info-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.header-info .info-list li {
+    margin-bottom: 8px;
+    color: #444;
+    font-size: 16px;
+}
+
+.theme-btn {
+    background: #2f4f6f;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-info {
+        margin-top: 20px;
+    }
+
+    .header-info .info-list {
+        text-align: center;
+    }
+}
+
+</style>
 
 </head>
 
@@ -36,45 +118,6 @@
 
     <div class="boxed_wrapper">
 
-
-        <!-- preloader -->
-        <!-- <div class="loader-wrap">
-            <div class="preloader">
-                <div class="preloader-close">x</div>
-                <div id="handle-preloader" class="handle-preloader">
-                    <div class="animation-preloader">
-                        <div class="spinner"></div>
-                        <div class="txt-loading">
-                            <span data-text-preloader="p" class="letters-loading">
-                                p
-                            </span>
-                            <span data-text-preloader="o" class="letters-loading">
-                                o
-                            </span>
-                            <span data-text-preloader="l" class="letters-loading">
-                                l
-                            </span>
-                            <span data-text-preloader="p" class="letters-loading">
-                                p
-                            </span>
-                            <span data-text-preloader="r" class="letters-loading">
-                                r
-                            </span>
-                            <span data-text-preloader="e" class="letters-loading">
-                                e
-                            </span>
-                            <span data-text-preloader="s" class="letters-loading">
-                                s
-                            </span>
-                            <span data-text-preloader="s" class="letters-loading">
-                                s
-                            </span>
-                        </div>
-                    </div>  
-                </div>
-            </div>
-        </div> -->
-        <!-- preloader end -->
 
 
         <!-- main header -->
@@ -126,27 +169,29 @@
                 </div>
             </div>
             <!-- header-upper -->
-            <div class="header-upper">
-                <div class="auto-container">
-                    <div class="upper-inner clearfix">
-                        <div class="logo-box pull-left">
-                            
-                            <figure class="logo"><a href="index.html"><img src="assets/images/logo.jpg" alt=""  ></a></figure>
-                        </div>
-                        <div class="header-info pull-right">
-                            <ul class="info-list">
-                               
-                                <li>
-                                    <h5>Mon - Sat <span>8:00 - 6:30</span></h5>
-                                </li>
-                                <li class="btn-box">
-                                    <a href="index.html" class="theme-btn btn-one">Get Free Quate</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <div class="header-upper">
+    <div class="header-container">
+
+        <!-- Logo -->
+        <div class="logo-box">
+            <img src="assets/images/logo-removebg-preview.png" alt="Logo">
+        </div>
+
+        <!-- Right Side Info -->
+        <div class="header-info">
+            <ul class="info-list">
+                <li>
+                    <h5>Mon – Sat <span>10:00 AM – 6:00 PM</span></h5>
+                </li>
+                <li class="btn-box">
+                    <a href="#" class="theme-btn">Get Free Quote</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
             <!-- header-lower -->
             <div class="header-lower">
                 <div class="auto-container">
@@ -220,12 +265,12 @@
             <div class="close-btn"><i class="fas fa-times"></i></div>
             
             <nav class="menu-box">
-                <div class="nav-logo"><a href="index.html"><img src="assets/images/logo-2.png" alt="" title=""></a></div>
+                <div class="nav-logo"><a href="index.html"><img src="assets/images/logo new.jpg" alt="" title=""></a></div>
                 <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
                 <div class="contact-info">
                     <h4>Contact Info</h4>
                     <ul>
-                        <li>Vaishnavi Residency, 67, Kanakapura Main Rd, Yelachenahalli, Naidu Layout, Bengaluru, Karnataka 560111/li>
+                        <li>Vaishnavi Residency, 67, Kanakapura Main Rd, Yelachenahalli, Naidu Layout, Bengaluru, Karnataka 560111./li>
                         <li><a href="tel:+8801682648101">+88 01682648101</a></li>
                         <li><a href="mailto:aravindayn@gmail.com">aravindayn@gmail.com</a></li>
                     </ul>
@@ -247,7 +292,7 @@
         <section class="banner-section">
             <div class="banner-carousel owl-theme owl-carousel owl-dots-none">
                 <div class="slide-item">
-                    <div class="image-layer" style="background-image:url(assets/images/banner/banner-1.jpg)"></div>
+                    <div class="image-layer" style="background-image:url(assets/images/banner/slider1.jpg)"></div>
                     <div class="shape" style="background-image: url(assets/images/shape/shape-1.png);"></div>
                     <div class="auto-container">
                         <div class="content-box">
@@ -260,7 +305,7 @@
                     </div>
                 </div>
                 <div class="slide-item">
-                    <div class="image-layer" style="background-image:url(assets/images/banner/banner-2.jpg)"></div>
+                    <div class="image-layer" style="background-image:url(assets/images/banner/slider2.jpg)"></div>
                     <div class="shape" style="background-image: url(assets/images/shape/shape-1.png);"></div>
                     <div class="auto-container">
                         <div class="content-box">
@@ -272,19 +317,7 @@
                         </div>  
                     </div>
                 </div>
-                <div class="slide-item">
-                    <div class="image-layer" style="background-image:url(assets/images/banner/banner-3.jpg)"></div>
-                    <div class="shape" style="background-image: url(assets/images/shape/shape-1.png);"></div>
-                    <div class="auto-container">
-                        <div class="content-box">
-                            <h3>Clinical Psychology</h3>
-                            <h1>Healing Minds  Changing Lives</h1>
-                            <div class="btn-box">
-                                <a href="index.html" class="theme-btn btn-one">Get Free Quate</a>
-                            </div>
-                        </div>   
-                    </div>
-                </div>
+             
             </div>
         </section>
         <!-- banner-section end -->
@@ -297,7 +330,7 @@
                     <div class="col-lg-6 col-md-12 col-sm-12 image-column">
                         <div class="image_block_1">
                             <div class="image-box">
-                                <figure class="image image-1"><img src="assets/images/resource/about-1.jpg" alt=""></figure>
+                                <figure class="image image-1"><img src="assets/images/resource/home2.jpg" alt=""></figure>
                                 <figure class="image image-2"><img src="assets/images/resource/about-2.jpg" alt=""></figure>
                                 <div class="shape" style="background-image: url(assets/images/shape/shape-2.png);"></div>
                                 
@@ -316,7 +349,7 @@
                                 <div class="text">
                                     <p>Many content examples exist, but most are modified or incomplete. Instead, we create clear and meaningful text that communicates your message accurately and professionally</p>
                                 <div class="inner-box">
-                                    <figure class="image-box"><img src="assets/images/resource/about-3.jpg" alt=""></figure>
+                                    <figure class="image-box"><img src="assets/images/resource/home1.jpg" alt=""></figure>
                                     <div class="inner">
                                         <h5><i class="flaticon-brain"></i>Sounds caring and supportive</h5>
                                         <p>Our approach combines empathy and expertise to support you on your healing journey</p>
@@ -333,84 +366,83 @@
 
 
         <!-- service-section -->
-        <section class="service-section bg-color-1 centred">
-            <div class="auto-container">
-                <div class="row clearfix">
-                  <div class="col-lg-3 col-md-6 col-sm-12 service-block">
-    <div class="service-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-        <div class="inner-box">
-            <figure class="icon-box"><img src="assets/images/icons/icon-1.png" alt=""></figure>
+     <section class="service-section bg-color-1 centred">
 
-            <h3><a href="service-details.html">Individual Therapy</a></h3>
-
-            <!-- NEW TEXT ADDED HERE -->
-            <p class="service-text">
-               Life brings light and heavy moments. If you’re facing anxiety, grief, or doubt, these sessions help you feel supported, steady, and renewed
-            </p>
-
-            <div class="link">
-                <a href="service-details.html"><i class="flaticon-right-arrow"></i></a>
-            </div>
+    <!-- ADDING CENTER HEADING -->
+    <div class="auto-container">
+        <div class="sec-title centred">
+            <h2>Our Services</h2>
         </div>
     </div>
-</div>
+    <!-- END -->
 
-                    <div class="col-lg-3 col-md-6 col-sm-12 service-block">
-                        <div class="service-block-one wow fadeInUp animated" data-wow-delay="200ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <figure class="icon-box"><img src="assets/images/icons/icon-2.png" alt=""></figure>
-                                <h3><a href="service-details.html">Couples Therapy</a></h3>
-                              
-               <p class="service-text">
-            Couples therapy creates a space to discuss communication issues, heal conflicts, rebuild trust, and strengthen connection so partners grow together.
+    <div class="auto-container">
+        <div class="row clearfix">
 
-            </p>
-
-                                <div class="link">
-                                    <a href="service-details.html"><i class="flaticon-right-arrow"></i></a>
-                                </div>
-                            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 service-block">
+                <div class="service-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <figure class="icon-box"><img src="assets/images/icons/Individual Therapy.jpg" alt=""></figure>
+                        <h3><a href="service-details.html">Individual Therapy</a></h3>
+                        <p class="service-text">
+                           Life brings light and heavy moments. If you’re facing anxiety, grief, or doubt, these sessions help you feel supported, steady, and renewed
+                        </p>
+                        <div class="link">
+                            <a href="service-details.html"><i class="flaticon-right-arrow"></i></a>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 service-block">
-                        <div class="service-block-one wow fadeInUp animated" data-wow-delay="400ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <figure class="icon-box"><img src="assets/images/icons/icon-3.png" alt=""></figure>
-                                <h3><a href="service-details.html">Family Therapy</a></h3>
-                                   <p class="service-text">
-     Family therapy helps ease conflict, reduce stress, improve communication, and create healthier connections so families understand each other and grow together.
-            </p>
-
-                                <div class="link">
-                                    <a href="service-details.html"><i class="flaticon-right-arrow"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 service-block">
-                        <div class="service-block-one wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <figure class="icon-box"><img src="assets/images/icons/icon-4.png" alt=""></figure>
-                                <h3><a href="service-details.html">Pre-Marital Counselling</a></h3>
-                                                  <p class="service-text">
-    Premarital sessions explore expectations, communication, and differences, helping couples build clarity, understanding, and a strong foundation as they begin their new chapter
-                                <div class="link">
-                                    <a href="service-details.html"><i class="flaticon-right-arrow"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                    
-                   
-                    
-                  
-                    
-
                 </div>
             </div>
-        </section>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 service-block">
+                <div class="service-block-one wow fadeInUp animated" data-wow-delay="200ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <figure class="icon-box"><img src="assets/images/icons/Couples Therapy.jpg" alt=""></figure>
+                        <h3><a href="service-details.html">Couples Therapy</a></h3>
+                        <p class="service-text">
+                            Couples therapy creates a space to discuss communication issues, heal conflicts, rebuild trust, and strengthen connection so partners grow together.
+                        </p>
+                        <div class="link">
+                            <a href="service-details.html"><i class="flaticon-right-arrow"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 service-block">
+                <div class="service-block-one wow fadeInUp animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <figure class="icon-box"><img src="assets/images/icons/Family Therapy.jpg" alt=""></figure>
+                        <h3><a href="service-details.html">Family Therapy</a></h3>
+                        <p class="service-text">
+                            Family therapy helps ease conflict, reduce stress, improve communication, and create healthier connections so families understand each other and grow together.
+                        </p>
+                        <div class="link">
+                            <a href="service-details.html"><i class="flaticon-right-arrow"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 service-block">
+                <div class="service-block-one wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <figure class="icon-box"><img src="assets/images/icons/Group therapy.jpg" alt=""></figure>
+                        <h3><a href="service-details.html">Group therapy</a></h3>
+                        <p class="service-text">
+                           Group therapy encourages shared healing, emotional support, connection, open communication, and personal growth within a safe environment.
+                        </p>
+                        <div class="link">
+                            <a href="service-details.html"><i class="flaticon-right-arrow"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
         <!-- service-section end -->
 
 
@@ -651,100 +683,11 @@
         <!-- cta-section end -->
 
 
-        <!-- news-section -->
-        <section class="news-section">
-            <div class="auto-container">
-                <div class="sec-title centred">
-                    <i class="flaticon-brain-1"></i>
-                    <h6>We Provide</h6>
-                    <h2>Our Blog Articles.</h2>
-                </div>
-                <div class="row clearfix">
-                    <div class="col-lg-4 col-md-6 col-sm-12 news-block">
-                        <div class="news-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <figure class="image-box"><a href="blog-details.html"><img src="assets/images/news/news-1.jpg" alt=""></a></figure>
-                                <div class="lower-content">
-                                    <ul class="info clearfix">
-                                        <li>Counseling</li>
-                                        <li>/</li>
-                                        <li><span>03 May</span></li>
-                                    </ul>
-                                    <h5><a href="blog-details.html">There are many variations of passages Lorem Ipsum available,</a></h5>
-                                    <div class="btn-box">
-                                        <a href="blog-details.html" class="theme-btn btn-two">Read More +</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 news-block">
-                        <div class="news-block-one wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <figure class="image-box"><a href="blog-details.html"><img src="assets/images/news/news-2.jpg" alt=""></a></figure>
-                                <div class="lower-content">
-                                    <ul class="info clearfix">
-                                        <li>Counseling</li>
-                                        <li>/</li>
-                                        <li><span>03 May</span></li>
-                                    </ul>
-                                    <h5><a href="blog-details.html">Maecenas eleifend risus et iaculis auctor In auctor massa ut arcu accumsan,</a></h5>
-                                    <div class="btn-box">
-                                        <a href="blog-details.html" class="theme-btn btn-two">Read More +</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 news-block">
-                        <div class="news-block-one wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <figure class="image-box"><a href="blog-details.html"><img src="assets/images/news/news-3.jpg" alt=""></a></figure>
-                                <div class="lower-content">
-                                    <ul class="info clearfix">
-                                        <li>Counseling</li>
-                                        <li>/</li>
-                                        <li><span>03 May</span></li>
-                                    </ul>
-                                    <h5><a href="blog-details.html">Nullam luctus lacus et pulvinar bibendum Cras ornare et massa.</a></h5>
-                                    <div class="btn-box">
-                                        <a href="blog-details.html" class="theme-btn btn-two">Read More +</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- news-section end -->
+      
 
 
         <!-- clients-section -->
-        <section class="clients-section centred">
-            <div class="auto-container">
-                <div class="clients-carousel owl-carousel owl-theme owl-nav-none owl-dots-none">
-                    <figure class="clients-logo-box">
-                        <a href="index.html"><img src="assets/images/clients/clients-logo-1.png" alt=""></a>
-                    </figure>
-                    <figure class="clients-logo-box">
-                        <a href="index.html"><img src="assets/images/clients/clients-logo-2.png" alt=""></a>
-                    </figure>
-                    <figure class="clients-logo-box">
-                        <a href="index.html"><img src="assets/images/clients/clients-logo-3.png" alt=""></a>
-                    </figure>
-                    <figure class="clients-logo-box">
-                        <a href="index.html"><img src="assets/images/clients/clients-logo-4.png" alt=""></a>
-                    </figure>
-                    <figure class="clients-logo-box">
-                        <a href="index.html"><img src="assets/images/clients/clients-logo-5.png" alt=""></a>
-                    </figure>
-                    <figure class="clients-logo-box">
-                        <a href="index.html"><img src="assets/images/clients/clients-logo-6.png" alt=""></a>
-                    </figure>
-                </div>
-            </div>
-        </section>
+       
         <!-- clients-section end -->
 
 
@@ -762,7 +705,7 @@
                     <div class="row clearfix">
                         <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
                             <div class="footer-widget logo-widget">
-                                <figure class="footer-logo"><a href="index.html"><img src="assets/images/logo.jpg" alt=""></a></figure>
+                                <figure class="footer-logo"><a href="index.html"><img src="assets/images/logo-removebg-preview.png" alt=""></a></figure>
                                 <div class="text">
                                     <p>providing safe, caring, professional guidance to help you heal and grow.</p>
                                 </div>
@@ -793,7 +736,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
                             <div class="footer-widget contact-widget">
                                 <ul class="info-list clearfix">
-                                    <li><h6>Address :</h6>Vaishnavi Residency, 67, Kanakapura Main Rd, Yelachenahalli, Naidu Layout, Bengaluru, Karnataka 560111.</li>
+                                    <li><h6>Address :</h6>Vaishnavi Residency, 67, Kanakapura Main Rd, Yelachenahalli, Naidu Layout, Bengaluru, Karnataka 560111..</li>
                                     <li><h6>Telephone :</h6><a href="tel:+99000111222500">9901444606</a></li>
                                     <li><h6>E-mail :</h6><a href="mailto:aravindayn@gmail.com">aravindayn@gmail.com</a></li>
                                 </ul>

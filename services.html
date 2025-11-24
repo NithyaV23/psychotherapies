@@ -28,6 +28,87 @@
 <link href="assets/css/style.css" rel="stylesheet">
 <link href="assets/css/responsive.css" rel="stylesheet">
 <link rel="icon" type="image/png" href="assets/images/favicon.png">
+<style>
+    .footer-widget .links-list {
+    display: flex;
+    flex-direction: column; /* force single column */
+}
+
+.footer-widget .links-list li {
+    list-style: none;
+    margin-bottom: 10px;
+    width: 100%;                /* ensures full width */
+    white-space: nowrap;        /* text will not go to new line */
+}
+
+.footer-widget .links-list li a {
+    display: inline-block;
+}
+
+    .header-upper {
+    width: 100%;
+    background-image: url("/mnt/data/WhatsApp Image 2025-11-22 at 13.22.55_792eb32a.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Logo */
+.logo-box img {
+    height: 80px;
+    width: auto;
+}
+
+/* Right Info */
+.header-info .info-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.header-info .info-list li {
+    margin-bottom: 8px;
+    color: #444;
+    font-size: 16px;
+}
+
+.theme-btn {
+    background: #2f4f6f;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-info {
+        margin-top: 20px;
+    }
+
+    .header-info .info-list {
+        text-align: center;
+    }
+}
+
+</style>
 
 </head>
 
@@ -90,26 +171,28 @@
                 </div>
             </div>
             <!-- header-upper -->
-            <div class="header-upper">
-                <div class="auto-container">
-                    <div class="upper-inner clearfix">
-                        <div class="logo-box pull-left">
-                            <figure class="logo"><a href="index.html"><img src="assets/images/logo.jpg" alt=""></a></figure>
-                        </div>
-                        <div class="header-info pull-right">
-                            <ul class="info-list">
-                              
-                                <li>
-                                    <h5>Mon - Sat <span>8:00 - 6:30</span></h5>
-                                </li>
-                                <li class="btn-box">
-                                    <a href="index.html" class="theme-btn btn-one">Get Free Quate</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+               <div class="header-upper">
+    <div class="header-container">
+
+        <!-- Logo -->
+        <div class="logo-box">
+            <img src="assets/images/logo-removebg-preview.png" alt="Logo">
+        </div>
+
+        <!-- Right Side Info -->
+        <div class="header-info">
+            <ul class="info-list">
+                <li>
+                    <h5>Mon – Sat <span>10:00 AM – 6:00 PM</span></h5>
+                </li>
+                <li class="btn-box">
+                    <a href="#" class="theme-btn">Get Free Quote</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
             <!-- header-lower -->
              <div class="header-lower">
                 <div class="auto-container">
@@ -152,6 +235,7 @@
                 </div>
             </div>
 
+
             <!--sticky Header-->
             <div class="sticky-header">
                 <div class="auto-container">
@@ -183,7 +267,7 @@
             <div class="close-btn"><i class="fas fa-times"></i></div>
             
             <nav class="menu-box">
-                <div class="nav-logo"><a href="index.html"><img src="assets/images/logo.jpg" alt="" title=""></a></div>
+                <div class="nav-logo"><a href="index.html"><img src="assets/images/logo-removebg-preview.png" alt="" title=""></a></div>
                 <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
                 <div class="contact-info">
                     <h4>Contact Info</h4>
@@ -207,7 +291,7 @@
 
 
         <!--Page Title-->
-        <section class="page-title" style="background-image: url(assets/images/background/page-title.jpg);">
+        <section class="page-title" style="background-image: url(assets/images/background/provid.jpg);">
             <div class="auto-container">
                 <div class="content-box clearfix">
                     <div class="shape">
@@ -219,12 +303,12 @@
                     <h1>Our Services</h1>
                 </div>
             </div>
-            <span class="schedule">Mon - Sat 8:00 - 6:30</span>
+            <span class="schedule"></span>Mon – Sat 10:00 AM – 6:00 PM
             <div class="place-box">
                 <div class="text">
                     <i class="flaticon-location-1"></i>
                     <p>Visit Our Place</p>
-                    <h6>Vaishnavi Residency, 67, Kanakapura Main Rd, Yelachenahalli, Naidu Layout, Bengaluru, Karnataka 560111</h6>
+                    <h6>Vaishnavi Residency, 67, Kanakapura Main Rd, Yelachenahalli, Naidu Layout, Bengaluru, Karnataka 560111.</h6>
                 </div>
             </div>
         </section>
@@ -508,83 +592,7 @@ CBT helps in challenging situations.</p>
         <!-- chooseus-section end -->
 
 
-        <!-- team-section -->
-        <section class="team-section">
-            <div class="auto-container">
-                <div class="sec-title centred">
-                    <i class="flaticon-brain-1"></i>
-                    <h6>We Provide</h6>
-                    <h2>Care Expart Member</h2>
-                </div>
-                <div class="row clearfix">
-                    <div class="col-lg-3 col-md-6 col-sm-12 team-block">
-                        <div class="team-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <figure class="image-box"><a href="index.html"><img src="assets/images/team/team-1.jpg" alt=""></a></figure>
-                                <div class="designation"><h6>Family Psychology</h6></div>
-                                <div class="text">
-                                    <h4><a href="index.html">Joni Hasan Anik</a></h4>
-                                    <ul class="social-links clearfix">
-                                        <li><a href="index.html">Facebook</a></li>
-                                        <li><a href="index.html">Twitter</a></li>
-                                        <li><a href="index.html">Behance</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 team-block">
-                        <div class="team-block-one wow fadeInUp animated" data-wow-delay="200ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <figure class="image-box"><a href="index.html"><img src="assets/images/team/team-2.jpg" alt=""></a></figure>
-                                <div class="designation"><h6>Family Psychology</h6></div>
-                                <div class="text">
-                                    <h4><a href="index.html">Towkibur Rahman</a></h4>
-                                    <ul class="social-links clearfix">
-                                        <li><a href="index.html">Facebook</a></li>
-                                        <li><a href="index.html">Twitter</a></li>
-                                        <li><a href="index.html">Behance</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 team-block">
-                        <div class="team-block-one wow fadeInUp animated" data-wow-delay="400ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <figure class="image-box"><a href="index.html"><img src="assets/images/team/team-3.jpg" alt=""></a></figure>
-                                <div class="designation"><h6>Family Psychology</h6></div>
-                                <div class="text">
-                                    <h4><a href="index.html">Kutubul Alam Putu</a></h4>
-                                    <ul class="social-links clearfix">
-                                        <li><a href="index.html">Facebook</a></li>
-                                        <li><a href="index.html">Twitter</a></li>
-                                        <li><a href="index.html">Behance</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 team-block">
-                        <div class="team-block-one wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <figure class="image-box"><a href="index.html"><img src="assets/images/team/team-4.jpg" alt=""></a></figure>
-                                <div class="designation"><h6>Family Psychology</h6></div>
-                                <div class="text">
-                                    <h4><a href="index.html">Mahi Al Mahin</a></h4>
-                                    <ul class="social-links clearfix">
-                                        <li><a href="index.html">Facebook</a></li>
-                                        <li><a href="index.html">Twitter</a></li>
-                                        <li><a href="index.html">Behance</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- team-section end -->
+    
 
 
         <!-- video-section -->
@@ -755,32 +763,6 @@ CBT helps in challenging situations.</p>
         <!-- testimonial-section end -->
 
 
-        <!-- clients-section -->
-        <section class="clients-section centred">
-            <div class="auto-container">
-                <div class="clients-carousel owl-carousel owl-theme owl-nav-none owl-dots-none">
-                    <figure class="clients-logo-box">
-                        <a href="index.html"><img src="assets/images/clients/clients-logo-1.png" alt=""></a>
-                    </figure>
-                    <figure class="clients-logo-box">
-                        <a href="index.html"><img src="assets/images/clients/clients-logo-2.png" alt=""></a>
-                    </figure>
-                    <figure class="clients-logo-box">
-                        <a href="index.html"><img src="assets/images/clients/clients-logo-3.png" alt=""></a>
-                    </figure>
-                    <figure class="clients-logo-box">
-                        <a href="index.html"><img src="assets/images/clients/clients-logo-4.png" alt=""></a>
-                    </figure>
-                    <figure class="clients-logo-box">
-                        <a href="index.html"><img src="assets/images/clients/clients-logo-5.png" alt=""></a>
-                    </figure>
-                    <figure class="clients-logo-box">
-                        <a href="index.html"><img src="assets/images/clients/clients-logo-6.png" alt=""></a>
-                    </figure>
-                </div>
-            </div>
-        </section>
-        <!-- clients-section end -->
 
 
         <!-- main-footer -->
@@ -790,7 +772,7 @@ CBT helps in challenging situations.</p>
                     <div class="row clearfix">
                         <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
                             <div class="footer-widget logo-widget">
-                                <figure class="footer-logo"><a href="index.html"><img src="assets/images/logo.jpg" alt=""></a></figure>
+                                <figure class="footer-logo"><a href="index.html"><img src="assets/images/logo-removebg-preview.png" alt=""></a></figure>
                                 <div class="text">
                                     <p>providing safe, caring, professional guidance to help you heal and grow.</p>
                                 </div>
@@ -821,7 +803,7 @@ CBT helps in challenging situations.</p>
                         <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
                             <div class="footer-widget contact-widget">
                                 <ul class="info-list clearfix">
-                                    <li><h6>Address :</h6>Vaishnavi Residency, 67, Kanakapura Main Rd, Yelachenahalli, Naidu Layout, Bengaluru, Karnataka 560111.</li>
+                                    <li><h6>Address :</h6>Vaishnavi Residency, 67, Kanakapura Main Rd, Yelachenahalli, Naidu Layout, Bengaluru, Karnataka 560111..</li>
                                     <li><h6>Telephone :</h6><a href="tel:+99000111222500">9901444606</a></li>
                                     <li><h6>E-mail :</h6><a href="mailto:aravindayn@gmail.com">aravindayn@gmail.com</a></li>
                                 </ul>
