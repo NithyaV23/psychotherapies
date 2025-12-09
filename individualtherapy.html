@@ -1,6 +1,7 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-<!-- Mirrored from azim.commonsupport.com/Therapy with Aravinda/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Nov 2025 06:07:01 GMT -->
+<!-- Mirrored from azim.commonsupport.com/Therapy with Aravinda/services.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Nov 2025 06:08:05 GMT -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,61 +27,98 @@
 <link href="assets/css/color.css" rel="stylesheet">
 <link href="assets/css/style.css" rel="stylesheet">
 <link href="assets/css/responsive.css" rel="stylesheet">
+<link rel="icon" type="image/png" href="assets/images/favicon.png">
 <style>
-   .readmore-lite {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 15px;
-    font-weight: 600;
-    
-    text-decoration: none;
-    position: relative;
-    transition: all 0.3s ease;
+   
+   
+.therapy-section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* Underline animation */
-.readmore-lite::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -3px;
-    width: 0%;
-    height: 2px;
-    background: #000;
-    transition: width 0.3s ease;
+.therapy-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #6589b9;
+    text-align: center;
+    margin-bottom: 25px;
 }
 
-.readmore-lite:hover::after {
-    width: 100%;
-    background: #fff; /* white on hover */
+.therapy-box {
+    background: #ffffff;
+    border-left: 6px solid #6589b9;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+    transition: 0.3s;
 }
 
-.readmore-lite span {
-    font-size: 18px;
-    transition: transform 0.3s ease;
+.therapy-box:hover {
+    background: #6589b9;
+    color: #ffffff;
 }
 
-.readmore-lite:hover {
+.therapy-box h3 {
+    margin-top: 0;
+    font-size: 22px;
+    color: #6589b9;
+    transition: 0.3s;
+}
+
+.therapy-box:hover h3 {
+    color: #ffffff;
+}
+
+.therapy-box ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.therapy-box ul li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.readmore-btn {
+    margin-top: 15px;
+    display: inline-block;
+    background: #6589b9;
     color: #fff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
-.readmore-lite:hover span {
-    transform: translateX(4px);
+.readmore-btn:hover {
+    background: #fff;
+    color: #6589b9;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.15);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .readmore-lite {
-        font-size: 14px;
+/* MOBILE */
+@media(max-width:768px){
+    .therapy-title{
+        font-size: 26px;
     }
-    .readmore-lite span {
-        font-size: 16px;
+    .therapy-box{
+        padding: 18px;
+    }
+    .therapy-box h3{
+        font-size: 20px;
     }
 }
 
 
+ 
 
+
+    
     .footer-widget .links-list {
     display: flex;
     flex-direction: column; /* force single column */
@@ -171,6 +209,8 @@
     <div class="boxed_wrapper">
 
 
+        
+
 
         <!-- main header -->
         <header class="main-header style-one">
@@ -196,7 +236,7 @@
                                     <span>English</span>
                                     <ul class="language-dropdown clearfix">
                                         <li><a href="index.html">English</a></li>
-                                       
+                                      
                                     </ul>
                                 </div>
                                 <div class="currency">
@@ -204,7 +244,7 @@
                                     <span>USD</span>
                                     <ul class="currency-dropdown clearfix">
                                         <li><a href="index.html">USD</a></li>
-                                     
+                                    
                                         <li><a href="index.html">Uro</a></li>
                                         <li><a href="index.html">Pound</a></li>
                                     </ul>
@@ -219,15 +259,14 @@
                 </div>
             </div>
             <!-- header-upper -->
-          <div class="header-upper">
+               <!-- header-upper -->
+             <div class="header-upper">
     <div class="header-container">
-
-        <!-- Logo -->
-        <div class="logo-box">
-            <img src="assets/images/logo.jpg" alt="Logo" style="width: 310px; height: 100px;"  >
+<div class="logo-box">
+            <img src="assets/images/logo.jpg" alt="Logo" style="width: 310px; height: 100px;" >
         </div>
 
-        <!-- Right Side Info -->
+         <!-- Right Side Info -->
         <div class="header-info">
             <ul class="info-list">
                 <li>
@@ -241,9 +280,9 @@
 
     </div>
 </div>
-
+       
             <!-- header-lower -->
-            <div class="header-lower">
+             <div class="header-lower">
                 <div class="auto-container">
                     <div class="outer-box clearfix">
                         <div class="menu-area pull-left clearfix">
@@ -284,6 +323,7 @@
                 </div>
             </div>
 
+
             <!--sticky Header-->
             <div class="sticky-header">
                 <div class="auto-container">
@@ -320,7 +360,7 @@
                 <div class="contact-info">
                     <h4>Contact Info</h4>
                     <ul>
-                        <li>Vaishnavi Residency, 67, Kanakapura Main Rd, Yelachenahalli, Naidu Layout, Bengaluru, Karnataka 560111./li>
+                       
                         <li><a href="tel:+8801682648101">+88 01682648101</a></li>
                         <li><a href="mailto:aravindayn@gmail.com">aravindayn@gmail.com</a></li>
                     </ul>
@@ -338,220 +378,91 @@
         </div><!-- End Mobile Menu -->
 
 
-        <!-- banner-section -->
-        <section class="banner-section">
-            <div class="banner-carousel owl-theme owl-carousel owl-dots-none">
-                <div class="slide-item">
-                    <div class="image-layer" style="background-image:url(assets/images/banner/slider1.jpg)"></div>
-                    <div class="shape" style="background-image: url(assets/images/shape/shape-1.png);"></div>
-                    <div class="auto-container">
-                        <div class="content-box">
-                     <h3>Clinical Psychology</h3>
-                                   <h1>		Evidence-based, modern therapies grounded in what truly works</h1>
-                            <div class="btn-box">
-                                <a href="index.html" class="theme-btn btn-one">Get Free Quate</a>
-                            </div>
-                        </div>  
-                    </div>
-                </div>
-                <div class="slide-item">
-                    <div class="image-layer" style="background-image:url(assets/images/banner/slider2.jpg)"></div>
-                    <div class="shape" style="background-image: url(assets/images/shape/shape-1.png);"></div>
-                    <div class="auto-container">
-                        <div class="content-box">
-                            <h3>Clinical Psychology</h3>
-                            <h1>		Support that’s kind, honest, and actually helpful </h1>
-                            <div class="btn-box">
-                                <a href="index.html" class="theme-btn btn-one">Get Free Quate</a>
-                            </div>
-                        </div>  
-                    </div>
-                </div>
-             
-            </div>
-        </section>
-        <!-- banner-section end -->
+  
 
 
-        <!-- about-section -->
-        <section class="about-section">
-            <div class="auto-container">
-                <div class="row clearfix">
-                    <div class="col-lg-6 col-md-12 col-sm-12 image-column">
-                        <div class="image_block_1">
-                            <div class="image-box">
-                                <figure class="image image-1"><img src="assets/images/resource/home2.jpg" alt=""></figure>
-                                <figure class="image image-2"><img src="assets/images/resource/about-2.jpg" alt=""></figure>
-                                <div class="shape" style="background-image: url(assets/images/shape/shape-2.png);"></div>
-                                
-                                <div class="video-btn">
-                                    <a href="https://www.youtube.com/watch?v=nfP5N9Yc72A&amp;t=28s" class="lightbox-image" data-caption=""><i class="flaticon-play"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12 content-column">
-                        <div class="content_block_1">
-                            <div class="content-box">
-                                <div class="sec-title">
-                                    <h2>Welcome. Let’s take this one conversation at a time. </h2>
-                                </div>
-                                 <h5>Support You Can Trust, When You Need It Most</h5>
-                                <div class="text">
-                                    <p>Sometimes life gets complicated in a way you didn’t quite see coming. Emotions stack up, responsibilities stretch thin, and suddenly everything feels heavier than it should.
+<section class="therapy-section">
 
-You deserve support that meets you where you are, respects your pace, and sees your potential clearly. In therapy, we unpack things gently, explore what’s working and what isn’t, and find practical steps that make life feel more manageable.
-Each session runs for 50 minutes — a structured, clinically informed space where we focus on what you need most, whether in-person or online.
-</p>
-                                
-                               
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <h2 class="therapy-title">Individual Therapy</h2>
 
+    <!-- MAIN CONCERNS -->
+    <div class="therapy-box">
+        <h3>Concerns I Frequently Support</h3>
+        <ul>
+            <li>Depression, anxiety, and stress</li>
+            <li>Relationship patterns and emotional wellbeing</li>
+            <li>Self-esteem, confidence, and body image concerns</li>
+            <li>Trauma, grief, and major life transitions</li>
+            <li>OCD, phobias, and panic-related difficulties</li>
+            <li>Anger regulation and behavioural patterns</li>
+            <li>ADHD and attention-related challenges</li>
+            <li>Eating-related concerns and unhealthy coping patterns</li>
+            <li>Career dissatisfaction, purpose, and identity concerns</li>
+            <li>Loneliness, isolation, and reconnecting with oneself</li>
+        </ul>
 
-        <!-- service-section -->
-<section class="service-section bg-color-1 centred">
-
-
-  <h1>How I Can Help</h1>
-
-
-       
-    <div class="auto-container">
-        <div class="row clearfix">
-
-            <div class="col-lg-3 col-md-6 col-sm-12 service-block">
-                <div class="service-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-                    <div class="inner-box">
-                        <figure class="icon-box"><img src="assets/images/icons/Individual Therapy.jpg" alt=""></figure>
-                        <h3><a href="service-details.html">Individual Therapy</a></h3>
-                        <p style="color:black; transition:0.3s;"
-   onmouseover="this.style.color='white'"
-   onmouseout="this.style.color='black'">
-
-  Life has its seasons, some light, others heavy. If you’re carrying anxiety, grief,
-  exhaustion, or self-doubt, these sessions are a place to set it down for a while.
-  We’ll bring in tools like CBT and mindfulness, but more than that, we’ll make room
-  for you to feel steady again.
-
-</p>
-
-                            <div class="link" style="margin-top:10px;">
-                <a href="individualtherapy.html"
-                   style="color:black; font-weight:600; font-size:15px; display:inline-flex; align-items:center; gap:5px; transition:0.3s;"
-                   onmouseover="this.style.color='white'"
-                   onmouseout="this.style.color='black'">
-                    Read More <span style="font-size:18px; transition:0.3s;">→</span>
-                </a>
-            </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-sm-12 service-block">
-                <div class="service-block-one wow fadeInUp animated" data-wow-delay="200ms" data-wow-duration="1500ms">
-                    <div class="inner-box">
-                        <figure class="icon-box"><img src="assets/images/icons/Couples Therapy.jpg" alt=""></figure>
-                        <h3><a href="service-details.html">Couples Therapy</a></h3>
-                       <p style="color:black; transition:0.3s;"
-   onmouseover="this.style.color='white'"
-   onmouseout="this.style.color='black'">
-
-  Life has its seasons, some light, others heavy. If you’re carrying anxiety, grief,
-  exhaustion, or self-doubt, these sessions are a place to set it down for a while.
-  We’ll bring in tools like CBT and mindfulness, but more than that, we’ll make room
-  for you to feel steady again.
-
-</p>
-
-                           <div class="link" style="margin-top:10px;">
-                <a href="Couples.html"
-                   style="color:black; font-weight:600; font-size:15px; display:inline-flex; align-items:center; gap:5px; transition:0.3s;"
-                   onmouseover="this.style.color='white'"
-                   onmouseout="this.style.color='black'">
-                    Read More <span style="font-size:18px; transition:0.3s;">→</span>
-                </a>
-            </div>
-                    </div>
-                </div>
-            </div>
-
-          <div class="col-lg-3 col-md-6 col-sm-12 service-block">
-    <div class="service-block-one wow fadeInUp animated" data-wow-delay="400ms" data-wow-duration="1500ms">
-        <div class="inner-box">
-            <figure class="icon-box"><img src="assets/images/icons/Family Therapy.jpg" alt=""></figure>
-
-            <h3><a href="family.html">Family Therapy</a></h3>
-
-            <!-- P TAG HOVER COLOR WORKING -->
-            <p style="color:black; transition:0.3s;"
-               onmouseover="this.style.color='white'"
-               onmouseout="this.style.color='black'">
-
-                Life has its seasons, some light, others heavy. If you’re carrying anxiety, grief,
-                exhaustion, or self-doubt, these sessions are a place to set it down for a while.
-                We’ll bring in tools like CBT and mindfulness, but more than that, we’ll make room
-                for you to feel steady again.
-            </p>
-
-            <!-- READ MORE TEXT WITH HOVER COLOR -->
-            <div class="link" style="margin-top:10px;">
-                <a href="family.html"
-                   style="color:black; font-weight:600; font-size:15px; display:inline-flex; align-items:center; gap:5px; transition:0.3s;"
-                   onmouseover="this.style.color='white'"
-                   onmouseout="this.style.color='black'">
-                    Read More <span style="font-size:18px; transition:0.3s;">→</span>
-                </a>
-            </div>
-
-        </div>
     </div>
-</div>
 
+    <!-- ADDITIONAL FOCUS -->
+    <div class="therapy-box">
+        <h3>Additional Areas of Clinical Focus</h3>
+        <ul>
+            <li>Performance-related concerns including performance anxiety</li>
+            <li>Cultural and identity-related stressors</li>
+            <li>Specific fears such as flying or medical anxiety</li>
+            <li>Behavioural patterns affecting daily functioning</li>
+            <li>Concerns linked to chronic stress or emotional overwhelm</li>
+            <li>Adjustment concerns after major life changes</li>
+        </ul>
 
-            <div class="col-lg-3 col-md-6 col-sm-12 service-block">
-                <div class="service-block-one wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
-                    <div class="inner-box">
-                        <figure class="icon-box"><img src="assets/images/icons/Group therapy.jpg" alt=""></figure>
-                        <h3><a href="Group.html">Group therapy</a></h3>
-                       <p style="color:black; transition:0.3s;"
-   onmouseover="this.style.color='white'"
-   onmouseout="this.style.color='black'">
-
-  Life has its seasons, some light, others heavy. If you’re carrying anxiety, grief,
-  exhaustion, or self-doubt, these sessions are a place to set it down for a while.
-  We’ll bring in tools like CBT and mindfulness, but more than that, we’ll make room
-  for you to feel steady again.
-
-</p>
-
-                           <div class="link" style="margin-top:10px;">
-                <a href="Group.html"
-                   style="color:black; font-weight:600; font-size:15px; display:inline-flex; align-items:center; gap:5px; transition:0.3s;"
-                   onmouseover="this.style.color='white'"
-                   onmouseout="this.style.color='black'">
-                    Read More <span style="font-size:18px; transition:0.3s;">→</span>
-                </a>
-            </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+  
     </div>
+
+    <!-- HOW I WORK -->
+    <div class="therapy-box">
+        <h3>How I Work</h3>
+        <p>
+            Each session is 50 minutes, offered in-person or online — a structured, 
+            supportive, and grounded therapeutic space centred entirely around you.
+        </p>
+
+      
+    </div>
+
+    <!-- TECHNIQUES -->
+    <div class="therapy-box">
+        <h3>Therapeutic Techniques</h3>
+        <ul>
+            <li>Cognitive Behavioural Therapy (CBT)</li>
+            <li>Dialectical Behaviour Therapy (DBT)</li>
+            <li>Acceptance & Commitment Therapy (ACT)</li>
+            <li>Schema Therapy</li>
+            <li>EMDR</li>
+            <li>Emotion-Focused Therapy (EFT)</li>
+            <li>Exposure & Response Prevention (ERP)</li>
+            <li>Interpersonal & Social Rhythm Therapy</li>
+            <li>Compassion-Focused Therapy (CFT)</li>
+            <li>Mindfulness-Based Interventions</li>
+            <li>Motivational Enhancement Therapy (MET)</li>
+        </ul>
+
+    </div>
+
+    <!-- CLOSING -->
+    <div class="therapy-box">
+        <p>
+            Most people come in for a specific reason — but stay because something shifts.
+            When you're ready, I’m here to support you through that journey.
+        </p>
+    </div>
+
 </section>
 
 
+        <!-- service-style-three end -->
 
-        <!-- service-section end -->
 
-
-        <!-- chooseus-section -->
-        <section class="chooseus-section">
+     <section class="chooseus-section">
             <div class="tabs-box">
                 <div class="title-inner">
                     <div class="auto-container">
@@ -566,14 +477,7 @@ Each session runs for 50 minutes — a structured, clinically informed space whe
                
             </div>
         </section>
-        <!-- chooseus-section end -->
-
-
-   
-
-
-        <!-- skills-section -->
-        <section class="skills-section">
+         <section class="skills-section">
             <div class="auto-container">
                 <div class="row align-items-center clearfix">
                     <div class="col-xl-6 col-lg-12 col-md-12 image-column">
@@ -599,46 +503,100 @@ Each session runs for 50 minutes — a structured, clinically informed space whe
                 </div>
             </div>
         </section>
-        <!-- skills-section end -->
 
 
+    
 
 
-        <!-- cta-section -->
-        <section class="cta-section bg-color-2">
-            <span class="title-one">b</span>
-            <span class="title-two">Psychologist</span>
+        <!-- video-section -->
+        
+
+
+       
+
+
+        <!-- testimonial-section -->
+        <section class="testimonial-section">
             <div class="auto-container">
-                <div class="inner-box clearfix">
-                    <div class="text pull-left">
-                        <h2></i>Book For <span>Online</span> <br />Appointments.</h2>
+                <div class="sec-title centred">
+                  
+                    <h6>We Provide</h6>
+                    <h2>What Client Says?</h2>
+                </div>
+                <div class="three-item-carousel owl-carousel owl-theme owl-dots-none owl-nav-none">
+                    <div class="testimonial-block-one">
+                        <div class="inner-box">
+                            <div class="icon-box"><i class="flaticon-quote"></i></div>
+                            <div class="review-box">
+                                <ul class="rating clearfix">
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                                <span>(02 Reviews)</span>
+                            </div>
+                            <div class="text">
+                                <h3>Phasellus in <span>psychotherapy</span> libero. Donec pellesque null id enim vehicula tincidunt. Nam posuere sit amet ipsum at <span>elementum</span>. Quisque vel diam sit amet ex condiment situm ultricies.</h3>
+                            </div>
+                           
+                        </div>
                     </div>
-                    <div class="btn-box pull-right">
-                        <a href="index.html" class="theme-btn btn-one">Book Now</a>
-                        <a href="index.html" class="theme-btn btn-three">Read More</a>
+                    <div class="testimonial-block-one">
+                        <div class="inner-box">
+                            <div class="icon-box"><i class="flaticon-quote"></i></div>
+                            <div class="review-box">
+                                <ul class="rating clearfix">
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                                <span>(02 Reviews)</span>
+                            </div>
+                            <div class="text">
+                                <h3>Quisque vel diam sit amet ex condiment situm ultricies. Phasellus in <span>psychotherapy</span> libero. Donec pellesque null id enim vehicula tincidunt. Nam posuere sit amet ipsum at <span>elementum</span>.</h3>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="testimonial-block-one">
+                        <div class="inner-box">
+                            <div class="icon-box"><i class="flaticon-quote"></i></div>
+                            <div class="review-box">
+                                <ul class="rating clearfix">
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                                <span>(02 Reviews)</span>
+                            </div>
+                            <div class="text">
+                                <h3>Donec pellesque null idenim vehicula tincidunt.Nam uere sit amet ipsum <span>elementum</span>. Quisque vel diam sit amet ex condiment situm ultricies. Phasellus in <span>psychotherapy</span> amet libero.</h3>
+                            </div>
+                            
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- cta-section end -->
+        <!-- testimonial-section end -->
 
 
-      
-
-
-        <!-- clients-section -->
-       
-        <!-- clients-section end -->
 
 
         <!-- main-footer -->
-       <footer class="main-footer">
+         <footer class="main-footer">
             <div class="auto-container">
                 <div class="footer-top">
                     <div class="text">
                         <div class="shape" style="background-image: url(assets/images/shape/shape-5.png);"></div>
                         <i class="flaticon-quote"></i>
-<h3>Empowering therapy sessions designed to heal emotional struggles, build resilience, improve mental well-being, and guide individuals toward a balanced, healthier life</h3>
+                       <h3>Empowering therapy sessions designed to heal emotional struggles, build resilience, improve mental well-being, and guide individuals toward a balanced, healthier life</h3>
                     </div>
                 </div>
                 <div class="widget-section">
@@ -723,5 +681,5 @@ Each session runs for 50 minutes — a structured, clinically informed space whe
 
 </body><!-- End of .page_wrapper -->
 
-<!-- Mirrored from azim.commonsupport.com/Therapy with Aravinda/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Nov 2025 06:07:01 GMT -->
+<!-- Mirrored from azim.commonsupport.com/Therapy with Aravinda/services.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Nov 2025 06:08:05 GMT -->
 </html>

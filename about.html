@@ -28,6 +28,58 @@
 <link href="assets/css/style.css" rel="stylesheet">
 <link href="assets/css/responsive.css" rel="stylesheet">
 <style>
+       .readmore-lite {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* Underline animation */
+.readmore-lite::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background: #000;
+    transition: width 0.3s ease;
+}
+
+.readmore-lite:hover::after {
+    width: 100%;
+    background: #fff; /* white on hover */
+}
+
+.readmore-lite span {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.readmore-lite:hover {
+    color: #fff;
+}
+
+.readmore-lite:hover span {
+    transform: translateX(4px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .readmore-lite {
+        font-size: 14px;
+    }
+    .readmore-lite span {
+        font-size: 16px;
+    }
+}
+
     
     .footer-widget .links-list {
     display: flex;
@@ -336,16 +388,29 @@
                         <div class="content_block_1">
                             <div class="content-box">
                                 <div class="sec-title">
-                                    <h2>Welcome. Let’s take this one conversation at a time. </h2>
+                                    <h2>About Aravinda</h2>
                                 </div>
-                                 <h5>Support You Can Trust, When You Need It Most</h5>
-                                <div class="text">
-                                    <p>Sometimes life gets complicated in a way you didn’t quite see coming. Emotions stack up, responsibilities stretch thin, and suddenly everything feels heavier than it should.
-
-You deserve support that meets you where you are, respects your pace, and sees your potential clearly. In therapy, we unpack things gently, explore what’s working and what isn’t, and find practical steps that make life feel more manageable.
-Each session runs for 50 minutes — a structured, clinically informed space where we focus on what you need most, whether in-person or online.
-</p>
                                 
+                                <div class="text">
+                                    <p>We all carry silent battles. Some are loud and visible, but most live quietly within us  in our anxieties, our relationships, or in the quiet moments when we feel unlike ourselves. Therapy is where the unspoken can find expression, and I am here to help you pause, reflect, and move through these moments with clarity. 
+
+I am Aravinda Nandakumar, a Counselling and Family Therapist trained in advanced psychotherapies. I work with individuals, couples, and families who are facing challenges such as anxiety, grief, trauma, and relational conflict. 
+
+</p>
+              
+<div class="sec-title">
+                                    <h2>Professional Background</h2>
+                                </div>
+                                
+                                <div class="text">
+                                    <p> I hold an M.Sc. in Counselling and Family Therapy (First Class with Distinction, IGNOU), and have continued to deepen my expertise through advanced certifications from institutions such as NIMHANS, the American Psychological Association (APA), and the University of Pennsylvania. My expertise spans Cognitive Behavioural Therapy, mindfulness, relationship and pre-marital counselling, substance abuse work, abnormal psychology, positive psychology, and trauma recovery. 
+
+I continually review new research and emerging therapeutic developments, integrating effective practices so the support you receive is nuanced and clinically refined. 
+
+My clinical experience includes my time at Spandana Rehabilitation Centre, where I conducted psychological assessments and supported patients navigating depression, substance dependence, and complex family dynamics. 
+
+
+</p>
                                
                             </div>
                         </div>
@@ -362,12 +427,20 @@ Each session runs for 50 minutes — a structured, clinically informed space whe
     <!-- ADDING CENTER HEADING -->
     <div class="auto-container">
         <div class="sec-title centred">
-            <h2>Our Services</h2>
+            <h2>How I Can Help</h2>
         </div>
     </div>
+    
     <!-- END -->
 
     
+  <section class="service-section bg-color-1 centred">
+
+
+ 
+
+
+       
     <div class="auto-container">
         <div class="row clearfix">
 
@@ -376,11 +449,25 @@ Each session runs for 50 minutes — a structured, clinically informed space whe
                     <div class="inner-box">
                         <figure class="icon-box"><img src="assets/images/icons/Individual Therapy.jpg" alt=""></figure>
                         <h3><a href="service-details.html">Individual Therapy</a></h3>
-                        <p class="service-text">
-                          Life has its seasons, some light, others heavy. If you’re carrying anxiety, grief, exhaustion, or self-doubt, these sessions are a place to set it down for a while. We’ll bring in tools like CBT and mindfulness, but more than that, we’ll make room for you to feel steady again.
-                        <div class="link">
-                            <a href="service-details.html"><i class="flaticon-right-arrow"></i></a>
-                        </div>
+                        <p style="color:black; transition:0.3s;"
+   onmouseover="this.style.color='white'"
+   onmouseout="this.style.color='black'">
+
+  Life has its seasons, some light, others heavy. If you’re carrying anxiety, grief,
+  exhaustion, or self-doubt, these sessions are a place to set it down for a while.
+  We’ll bring in tools like CBT and mindfulness, but more than that, we’ll make room
+  for you to feel steady again.
+
+</p>
+
+                            <div class="link" style="margin-top:10px;">
+                <a href=""
+                   style="color:black; font-weight:600; font-size:15px; display:inline-flex; align-items:center; gap:5px; transition:0.3s;"
+                   onmouseover="this.style.color='white'"
+                   onmouseout="this.style.color='black'">
+                     <span style="font-size:18px; transition:0.3s;">→</span>
+                </a>
+            </div>
                     </div>
                 </div>
             </div>
@@ -390,47 +477,93 @@ Each session runs for 50 minutes — a structured, clinically informed space whe
                     <div class="inner-box">
                         <figure class="icon-box"><img src="assets/images/icons/Couples Therapy.jpg" alt=""></figure>
                         <h3><a href="service-details.html">Couples Therapy</a></h3>
-                        <p class="service-text">
-                            Every relationship has its moments — of closeness, of distance, of trying to understand one another. Couples therapy is about having a space to talk through conflicts, communication struggles, or trust concerns with guidance and care, so you can find your way back to each other.
-                        <div class="link">
-                            <a href="service-details.html"><i class="flaticon-right-arrow"></i></a>
-                        </div>
+                       <p style="color:black; transition:0.3s;"
+   onmouseover="this.style.color='white'"
+   onmouseout="this.style.color='black'">
+
+  Life has its seasons, some light, others heavy. If you’re carrying anxiety, grief,
+  exhaustion, or self-doubt, these sessions are a place to set it down for a while.
+  We’ll bring in tools like CBT and mindfulness, but more than that, we’ll make room
+  for you to feel steady again.
+
+</p>
+
+                           <div class="link" style="margin-top:10px;">
+                <a href=""
+                   style="color:black; font-weight:600; font-size:15px; display:inline-flex; align-items:center; gap:5px; transition:0.3s;"
+                   onmouseover="this.style.color='white'"
+                   onmouseout="this.style.color='black'">
+                    <span style="font-size:18px; transition:0.3s;">→</span>
+                </a>
+            </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 col-sm-12 service-block">
-                <div class="service-block-one wow fadeInUp animated" data-wow-delay="400ms" data-wow-duration="1500ms">
-                    <div class="inner-box">
-                        <figure class="icon-box"><img src="assets/images/icons/Family Therapy.jpg" alt=""></figure>
-                        <h3><a href="service-details.html">Family Therapy</a></h3>
-                        <p class="service-text">
-                            Families are beautifully complex. Sometimes they lift us up, sometimes they leave us tangled. Family sessions create space to untangle those knots — working through conflict, stress, or communication breakdowns, and finding gentler, healthier ways to connect.
-                        </p>
-                        <div class="link">
-                            <a href="service-details.html"><i class="flaticon-right-arrow"></i></a>
-                        </div>
-                    </div>
-                </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 service-block">
+    <div class="service-block-one wow fadeInUp animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+        <div class="inner-box">
+            <figure class="icon-box"><img src="assets/images/icons/Family Therapy.jpg" alt=""></figure>
+
+            <h3><a href="family.html">Family Therapy</a></h3>
+
+            <!-- P TAG HOVER COLOR WORKING -->
+            <p style="color:black; transition:0.3s;"
+               onmouseover="this.style.color='white'"
+               onmouseout="this.style.color='black'">
+
+                Life has its seasons, some light, others heavy. If you’re carrying anxiety, grief,
+                exhaustion, or self-doubt, these sessions are a place to set it down for a while.
+                We’ll bring in tools like CBT and mindfulness, but more than that, we’ll make room
+                for you to feel steady again.
+            </p>
+
+            <!-- READ MORE TEXT WITH HOVER COLOR -->
+            <div class="link" style="margin-top:10px;">
+                <a href=""
+                   style="color:black; font-weight:600; font-size:15px; display:inline-flex; align-items:center; gap:5px; transition:0.3s;"
+                   onmouseover="this.style.color='white'"
+                   onmouseout="this.style.color='black'">
+                    <span style="font-size:18px; transition:0.3s;">→</span>
+                </a>
             </div>
+
+        </div>
+    </div>
+</div>
+
 
             <div class="col-lg-3 col-md-6 col-sm-12 service-block">
                 <div class="service-block-one wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
                     <div class="inner-box">
                         <figure class="icon-box"><img src="assets/images/icons/Group therapy.jpg" alt=""></figure>
-                        <h3><a href="service-details.html">Group therapy</a></h3>
-                        <p class="service-text">
-                           Group therapy offers a space to share your experiences with others who understand what you’re going through. It’s a place to feel less alone, to learn from different perspectives, and to build insight and confidence in a setting that’s supportive and steady.
-                        </p>
-                        <div class="link">
-                            <a href="service-details.html"><i class="flaticon-right-arrow"></i></a>
-                        </div>
+                        <h3><a href="Group.html">Group therapy</a></h3>
+                       <p style="color:black; transition:0.3s;"
+   onmouseover="this.style.color='white'"
+   onmouseout="this.style.color='black'">
+
+  Life has its seasons, some light, others heavy. If you’re carrying anxiety, grief,
+  exhaustion, or self-doubt, these sessions are a place to set it down for a while.
+  We’ll bring in tools like CBT and mindfulness, but more than that, we’ll make room
+  for you to feel steady again.
+
+</p>
+
+                           <div class="link" style="margin-top:10px;">
+                <a href=""
+                   style="color:black; font-weight:600; font-size:15px; display:inline-flex; align-items:center; gap:5px; transition:0.3s;"
+                   onmouseover="this.style.color='white'"
+                   onmouseout="this.style.color='black'">
+                  <span style="font-size:18px; transition:0.3s;">→</span>
+                </a>
+            </div>
                     </div>
                 </div>
             </div>
 
         </div>
     </div>
+</section>
 </section>
         <!-- service-style-three end -->
 
@@ -469,45 +602,17 @@ Each session runs for 50 minutes — a structured, clinically informed space whe
                         <div class="content_block_4">
                             <div class="content-box">
                                 <div class="sec-title">
-                                    <h2>Our Psychlogical Therapy By Expert.</h2>
+                                    <h2>Therapeutic Approach</h2>
                                 </div>
                                 <div class="text">
-                                    <p>We offer compassionate, evidence-based therapy designed to support emotional healing and personal growth. Our qualified experts work closely with you to understand your concerns, guide you through challenges, and help you build a healthier mindset.</p>
+                                    <p>I view therapy as a collaborative process: one that requires clarity, patience, and respect. My role is to listen with empathy, to ask the questions that matter, and to create a structured yet compassionate space where new possibilities for change can emerge. 
+
+The work we do together is grounded in evidence-based methods, but held with the kind of warmth and steadiness that makes honest exploration feel possible. In-person or online, I show up with the same care, presence, and calm, so you feel supported wherever you are.
+
+Finding the right therapist is deeply personal. If I am not the right fit, I will guide you toward someone who may be — because what matters most is that you feel supported and understood.
+</p>
                                 </div>
-                                <div class="inner-box">
-                                    <div class="row clearfix">
-                                        <div class="col-lg-4 col-md-6 col-sm-12 progress-block">
-                                            <div class="single-progress-box">
-                                                <div class="box">
-                                                    <div class="piechart"  data-fg-color="#646464" data-value=".85">
-                                                        <span>.85</span>
-                                                    </div>
-                                                </div>
-                                                <h5>Family expert</h5>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-sm-12 progress-block">
-                                            <div class="single-progress-box">
-                                                <div class="box">
-                                                    <div class="piechart"  data-fg-color="#646464" data-value=".70">
-                                                        <span>.70</span>
-                                                    </div>
-                                                </div>
-                                                <h5>Life Coaching expert</h5>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-sm-12 progress-block">
-                                            <div class="single-progress-box">
-                                                <div class="box">
-                                                    <div class="piechart"  data-fg-color="#646464" data-value=".90">
-                                                        <span>.90</span>
-                                                    </div>
-                                                </div>
-                                                <h5>Children expert</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                               
                             </div>
                         </div>
                     </div>
