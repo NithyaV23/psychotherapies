@@ -159,6 +159,429 @@
         text-align: center;
     }
 }
+/* slider */
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.caption {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  font-size: 2rem;
+  color: #fff;
+  background: rgba(0,0,0,0.5);
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+
+/* Navigation arrows */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  font-size: 30px;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .caption {
+    font-size: 1.4rem;
+    bottom: 20px;
+    left: 20px;
+  }
+}
+.slide-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+  background: rgba(0,0,0,0.4);
+  padding: 15px 30px;
+  border-radius: 10px;
+  max-width: 90%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .slide-title {
+    font-size: 1.8rem;
+    padding: 10px 20px;
+  }
+}
+
+
+
+/* design  */
+.skills-section {
+    padding: 80px 0;
+    background-color: #f5f5f5;
+}
+
+.skills-section .image-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: transform 0.5s;
+}
+
+.skills-section .image-box:hover {
+    transform: scale(1.05);
+}
+
+.skills-section .image-box img {
+    width: 100%;
+    display: block;
+    border-radius: 15px;
+}
+
+.skills-section .content-box {
+    padding: 20px;
+}
+
+.skills-section .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.skills-section .description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.skills-section .btn-primary {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #ff6b6b;
+    color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.skills-section .btn-primary:hover {
+    background: #ff4757;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .skills-section .section-title {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-section {
+        padding: 50px 20px;
+    }
+
+    .skills-section .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills-section .section-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .skills-section .description {
+        text-align: center;
+    }
+
+    .skills-section .btn-primary {
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+
+    .skills-section .image-box {
+        margin-bottom: 30px;
+    }
+}
+
+
+/* how can i help */
+.service-section {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+}
+
+.service-section .section-title {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+    color: #222;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.service-card .icon-box {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+}
+
+.service-card .icon-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.service-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.service-card h3 a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+}
+
+.service-card h3 a:hover {
+    color: #ff6b6b;
+}
+
+.service-card p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.service-card .read-more {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #ff6b6b;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s;
+}
+
+.service-card .read-more:hover {
+    color: #222;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .service-section .section-title {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
+    .service-card {
+        padding: 25px 15px;
+    }
+}
+/* welcome let's take  */
+.about-section {
+    padding: 80px 20px;
+    background-color: #f5f5f5;
+}
+
+.about-section .image-block {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: transform 0.5s;
+}
+
+.about-section .image-block:hover {
+    transform: scale(1.03);
+}
+
+.about-section .image-wrapper {
+    position: relative;
+}
+
+.about-section .image-wrapper .image img {
+    width: 100%;
+    display: block;
+    border-radius: 15px;
+}
+
+.about-section .image-wrapper .image.image-2 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 90%;
+    opacity: 0.8;
+}
+
+.about-section .video-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about-section .video-btn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background-color: rgba(255, 107, 107, 0.8);
+    border-radius: 50%;
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.about-section .video-btn a:hover {
+    background-color: #ff4757;
+}
+
+.about-section .content-block {
+    padding: 20px 30px;
+}
+
+.about-section .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.about-section .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #ff6b6b;
+    font-weight: 500;
+}
+
+.about-section .description {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.about-section .btn-primary {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #ff6b6b;
+    color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.about-section .btn-primary:hover {
+    background: #ff4757;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .about-section {
+        padding: 60px 20px;
+    }
+
+    .about-section .section-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .about-section .subtitle {
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    .about-section .description {
+        text-align: center;
+    }
+
+    .about-section .btn-primary {
+        display: block;
+        margin: 20px auto 0;
+        text-align: center;
+    }
+
+    .about-section .image-wrapper .image.image-2 {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        opacity: 1;
+        margin-top: 20px;
+    }
+}
 
 </style>
 
@@ -339,211 +762,157 @@
 
 
         <!-- banner-section -->
-        <section class="banner-section">
-            <div class="banner-carousel owl-theme owl-carousel owl-dots-none">
-                <div class="slide-item">
-                    <div class="image-layer" style="background-image:url(assets/images/banner/slider1.jpg)"></div>
-                    <div class="shape" style="background-image: url(assets/images/shape/shape-1.png);"></div>
-                    <div class="auto-container">
-                        <div class="content-box">
-                     <h3>Clinical Psychology</h3>
-                                   <h1>		Evidence-based, modern therapies grounded in what truly works</h1>
-                            <div class="btn-box">
-                                <a href="index.html" class="theme-btn btn-one">Get Free Quate</a>
-                            </div>
-                        </div>  
-                    </div>
-                </div>
-                <div class="slide-item">
-                    <div class="image-layer" style="background-image:url(assets/images/banner/slider2.jpg)"></div>
-                    <div class="shape" style="background-image: url(assets/images/shape/shape-1.png);"></div>
-                    <div class="auto-container">
-                        <div class="content-box">
-                            <h3>Clinical Psychology</h3>
-                            <h1>		Support that’s kind, honest, and actually helpful </h1>
-                            <div class="btn-box">
-                                <a href="index.html" class="theme-btn btn-one">Get Free Quate</a>
-                            </div>
-                        </div>  
-                    </div>
-                </div>
-             
-            </div>
-        </section>
+     <div class="slider-container">
+
+  <!-- Slides -->
+  <div class="slider">
+    <div class="slide active">
+      <img src="assets/images/banner/home1.jpg" alt="">
+       <h1 class="slide-title">	Evidence-based, modern therapies grounded in what truly works.</h1>
+    
+    </div>
+    <div class="slide">
+      <img src="assets/images/banner/home2.jpg" alt="">
+       <h1 class="slide-title">	Therapy designed around you, because no two minds flourish the same way.</h1>
+   
+    </div>
+    <div class="slide">
+      <img src="assets/images/banner/home3.jpg" alt="">
+       <h1 class="slide-title">	Support that’s kind, honest, and actually helpful. </h1>
+    
+    </div>
+  </div>
+
+  <!-- Navigation arrows -->
+  <button class="arrow prev">&#10094;</button>
+  <button class="arrow next">&#10095;</button>
+
+</div>
+
         <!-- banner-section end -->
 
 
         <!-- about-section -->
-        <section class="about-section">
-            <div class="auto-container">
-                <div class="row clearfix">
-                    <div class="col-lg-6 col-md-12 col-sm-12 image-column">
-                        <div class="image_block_1">
-                            <div class="image-box">
-                                <figure class="image image-1"><img src="assets/images/resource/home2.jpg" alt=""></figure>
-                                <figure class="image image-2"><img src="assets/images/resource/about-2.jpg" alt=""></figure>
-                                <div class="shape" style="background-image: url(assets/images/shape/shape-2.png);"></div>
-                                
-                                <div class="video-btn">
-                                    <a href="https://www.youtube.com/watch?v=nfP5N9Yc72A&amp;t=28s" class="lightbox-image" data-caption=""><i class="flaticon-play"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12 content-column">
-                        <div class="content_block_1">
-                            <div class="content-box">
-                                <div class="sec-title">
-                                    <h2>Welcome. Let’s take this one conversation at a time. </h2>
-                                </div>
-                                 <h5>Support You Can Trust, When You Need It Most</h5>
-                                <div class="text">
-                                    <p>Sometimes life gets complicated in a way you didn’t quite see coming. Emotions stack up, responsibilities stretch thin, and suddenly everything feels heavier than it should.
-
-You deserve support that meets you where you are, respects your pace, and sees your potential clearly. In therapy, we unpack things gently, explore what’s working and what isn’t, and find practical steps that make life feel more manageable.
-Each session runs for 50 minutes — a structured, clinically informed space where we focus on what you need most, whether in-person or online.
-</p>
-                                
-                               
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- service-section -->
-<section class="service-section bg-color-1 centred">
-
-
-  <h1>How I Can Help</h1>
-
-
-       
+      <section class="about-section">
     <div class="auto-container">
         <div class="row clearfix">
 
-            <div class="col-lg-3 col-md-6 col-sm-12 service-block">
-                <div class="service-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-                    <div class="inner-box">
-                        <figure class="icon-box"><img src="assets/images/icons/Individual Therapy.jpg" alt=""></figure>
-                        <h3><a href="service-details.html">Individual Therapy</a></h3>
-                        <p style="color:black; transition:0.3s;"
-   onmouseover="this.style.color='white'"
-   onmouseout="this.style.color='black'">
+            <!-- Image Column -->
+            <div class="col-lg-6 col-md-12 col-sm-12 image-column">
+                <div class="image-block">
+                    <div class="image-wrapper">
+                        <figure class="image">
+                            <img src="assets/images/resource/home2.jpg" alt="About Image 1">
+                        </figure>
+                      
+                       
 
-  Life has its seasons, some light, others heavy. If you’re carrying anxiety, grief,
-  exhaustion, or self-doubt, these sessions are a place to set it down for a while.
-  We’ll bring in tools like CBT and mindfulness, but more than that, we’ll make room
-  for you to feel steady again.
-
-</p>
-
-                            <div class="link" style="margin-top:10px;">
-                <a href="individualtherapy.html"
-                   style="color:black; font-weight:600; font-size:15px; display:inline-flex; align-items:center; gap:5px; transition:0.3s;"
-                   onmouseover="this.style.color='white'"
-                   onmouseout="this.style.color='black'">
-                    Read More <span style="font-size:18px; transition:0.3s;">→</span>
-                </a>
-            </div>
+                        
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 col-sm-12 service-block">
-                <div class="service-block-one wow fadeInUp animated" data-wow-delay="200ms" data-wow-duration="1500ms">
-                    <div class="inner-box">
-                        <figure class="icon-box"><img src="assets/images/icons/Couples Therapy.jpg" alt=""></figure>
-                        <h3><a href="service-details.html">Couples Therapy</a></h3>
-                       <p style="color:black; transition:0.3s;"
-   onmouseover="this.style.color='white'"
-   onmouseout="this.style.color='black'">
-
-  Life has its seasons, some light, others heavy. If you’re carrying anxiety, grief,
-  exhaustion, or self-doubt, these sessions are a place to set it down for a while.
-  We’ll bring in tools like CBT and mindfulness, but more than that, we’ll make room
-  for you to feel steady again.
-
-</p>
-
-                           <div class="link" style="margin-top:10px;">
-                <a href="Couples.html"
-                   style="color:black; font-weight:600; font-size:15px; display:inline-flex; align-items:center; gap:5px; transition:0.3s;"
-                   onmouseover="this.style.color='white'"
-                   onmouseout="this.style.color='black'">
-                    Read More <span style="font-size:18px; transition:0.3s;">→</span>
-                </a>
-            </div>
-                    </div>
-                </div>
-            </div>
-
-          <div class="col-lg-3 col-md-6 col-sm-12 service-block">
-    <div class="service-block-one wow fadeInUp animated" data-wow-delay="400ms" data-wow-duration="1500ms">
-        <div class="inner-box">
-            <figure class="icon-box"><img src="assets/images/icons/Family Therapy.jpg" alt=""></figure>
-
-            <h3><a href="family.html">Family Therapy</a></h3>
-
-            <!-- P TAG HOVER COLOR WORKING -->
-            <p style="color:black; transition:0.3s;"
-               onmouseover="this.style.color='white'"
-               onmouseout="this.style.color='black'">
-
-                Life has its seasons, some light, others heavy. If you’re carrying anxiety, grief,
-                exhaustion, or self-doubt, these sessions are a place to set it down for a while.
-                We’ll bring in tools like CBT and mindfulness, but more than that, we’ll make room
-                for you to feel steady again.
-            </p>
-
-            <!-- READ MORE TEXT WITH HOVER COLOR -->
-            <div class="link" style="margin-top:10px;">
-                <a href="family.html"
-                   style="color:black; font-weight:600; font-size:15px; display:inline-flex; align-items:center; gap:5px; transition:0.3s;"
-                   onmouseover="this.style.color='white'"
-                   onmouseout="this.style.color='black'">
-                    Read More <span style="font-size:18px; transition:0.3s;">→</span>
-                </a>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-
-            <div class="col-lg-3 col-md-6 col-sm-12 service-block">
-                <div class="service-block-one wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
-                    <div class="inner-box">
-                        <figure class="icon-box"><img src="assets/images/icons/Group therapy.jpg" alt=""></figure>
-                        <h3><a href="Group.html">Group therapy</a></h3>
-                       <p style="color:black; transition:0.3s;"
-   onmouseover="this.style.color='white'"
-   onmouseout="this.style.color='black'">
-
-  Life has its seasons, some light, others heavy. If you’re carrying anxiety, grief,
-  exhaustion, or self-doubt, these sessions are a place to set it down for a while.
-  We’ll bring in tools like CBT and mindfulness, but more than that, we’ll make room
-  for you to feel steady again.
-
-</p>
-
-                           <div class="link" style="margin-top:10px;">
-                <a href="Group.html"
-                   style="color:black; font-weight:600; font-size:15px; display:inline-flex; align-items:center; gap:5px; transition:0.3s;"
-                   onmouseover="this.style.color='white'"
-                   onmouseout="this.style.color='black'">
-                    Read More <span style="font-size:18px; transition:0.3s;">→</span>
-                </a>
-            </div>
-                    </div>
+            <!-- Content Column -->
+            <div class="col-lg-6 col-md-12 col-sm-12 content-column">
+                <div class="content-block">
+                    <h2 class="section-title">Welcome. Let’s take this one conversation at a time.</h2>
+                    <h5 class="subtitle">Support You Can Trust, When You Need It Most</h5>
+                    <p class="description">
+                        Sometimes life gets complicated in a way you didn’t quite see coming. Emotions stack up, responsibilities stretch thin, and suddenly everything feels heavier than it should.
+                    </p>
+                    <p class="description">
+                        You deserve support that meets you where you are, respects your pace, and sees your potential clearly. In therapy, we unpack things gently, explore what’s working and what isn’t, and find practical steps that make life feel more manageable.
+                    </p>
+                    <p class="description">
+                        Each session runs for 50 minutes — a structured, clinically informed space where we focus on what you need most, whether in-person or online.
+                    </p>
+                    <a href="#" class="btn-primary">Book a Session</a>
                 </div>
             </div>
 
         </div>
     </div>
 </section>
+
+
+        <!-- service-section -->
+<section class="service-section">
+    <div class="auto-container">
+        <h1 class="section-title">How I Can Help</h1>
+        <div class="services-grid">
+
+            <!-- Service Card -->
+            <div class="service-card">
+                <figure class="icon-box">
+                    <img src="assets/images/icons/Individual Therapy.jpg" alt="Individual Therapy">
+                </figure>
+                <h3><a href="individualtherapy.html">Individual Therapy</a></h3>
+                <p>
+                    Life has its seasons, some light, others heavy. If you’re carrying anxiety, grief,
+                    exhaustion, or self-doubt, these sessions are a place to set it down for a while.
+                    We’ll bring in tools like CBT and mindfulness, but more than that, we’ll make room
+                    for you to feel steady again.
+                </p>
+                <a href="individualtherapy.html" class="read-more">
+                    Read More <span>→</span>
+                </a>
+            </div>
+
+            <!-- Service Card -->
+            <div class="service-card">
+                <figure class="icon-box">
+                    <img src="assets/images/icons/Couples Therapy.jpg" alt="Couples Therapy">
+                </figure>
+                <h3><a href="Couples.html">Couples Therapy</a></h3>
+                <p>
+                    Life has its seasons, some light, others heavy. If you’re carrying anxiety, grief,
+                    exhaustion, or self-doubt, these sessions are a place to set it down for a while.
+                    We’ll bring in tools like CBT and mindfulness, but more than that, we’ll make room
+                    for you to feel steady again.
+                </p>
+                <a href="Couples.html" class="read-more">
+                    Read More <span>→</span>
+                </a>
+            </div>
+
+            <!-- Service Card -->
+            <div class="service-card">
+                <figure class="icon-box">
+                    <img src="assets/images/icons/Family Therapy.jpg" alt="Family Therapy">
+                </figure>
+                <h3><a href="family.html">Family Therapy</a></h3>
+                <p>
+                    Life has its seasons, some light, others heavy. If you’re carrying anxiety, grief,
+                    exhaustion, or self-doubt, these sessions are a place to set it down for a while.
+                    We’ll bring in tools like CBT and mindfulness, but more than that, we’ll make room
+                    for you to feel steady again.
+                </p>
+                <a href="family.html" class="read-more">
+                    Read More <span>→</span>
+                </a>
+            </div>
+
+            <!-- Service Card -->
+            <div class="service-card">
+                <figure class="icon-box">
+                    <img src="assets/images/icons/Group therapy.jpg" alt="Group Therapy">
+                </figure>
+                <h3><a href="Group.html">Group Therapy</a></h3>
+                <p>
+                    Life has its seasons, some light, others heavy. If you’re carrying anxiety, grief,
+                    exhaustion, or self-doubt, these sessions are a place to set it down for a while.
+                    We’ll bring in tools like CBT and mindfulness, but more than that, we’ll make room
+                    for you to feel steady again.
+                </p>
+                <a href="Group.html" class="read-more">
+                    Read More <span>→</span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
 
 
 
@@ -573,32 +942,38 @@ Each session runs for 50 minutes — a structured, clinically informed space whe
 
 
         <!-- skills-section -->
-        <section class="skills-section">
-            <div class="auto-container">
-                <div class="row align-items-center clearfix">
-                    <div class="col-xl-6 col-lg-12 col-md-12 image-column">
-                        <div class="image_block_2">
-                            <div class="image-box">
-                                <figure class="image"><img src="assets/images/resource/Artboard 1.jpg" alt=""></figure>
-                                <!-- <div class="text">
-                                    <h6>Our Skill</h6>
-                                </div> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-12 col-md-12 content-column">
-                        <div class="content_block_4">
-                            <div class="content-box">
-                                
-                                <div class="text">
-<p style="font-style: bold;">Therapy with me is calm, collaborative, and paced with intention. Whether we meet in-person or online, you can expect a space where your thoughts are taken seriously, your feelings are met with respect, and your experiences are never rushed or minimised. My role is to listen closely, offer clarity when things feel tangled, and bring in evidence-based approaches in a way that feels clear and practical.</p>                                </div>
-                                
-                            </div>
-                        </div>
+     <section class="skills-section">
+    <div class="auto-container">
+        <div class="row align-items-center clearfix">
+            
+            <!-- Image Column -->
+            <div class="col-xl-6 col-lg-12 col-md-12 image-column">
+                <div class="image_block_2">
+                    <div class="image-box">
+                        <figure class="image">
+                            <img src="assets/images/resource/Artboard 1.jpg" alt="Skill Image">
+                        </figure>
                     </div>
                 </div>
             </div>
-        </section>
+            
+            <!-- Content Column -->
+            <div class="col-xl-6 col-lg-12 col-md-12 content-column">
+                <div class="content_block_4">
+                    <div class="content-box">
+                        <h2 class="section-title">Our Therapy Approach</h2>
+                        <p class="description">
+                            Therapy with me is calm, collaborative, and paced with intention. Whether we meet in-person or online, you can expect a space where your thoughts are taken seriously, your feelings are met with respect, and your experiences are never rushed or minimised. My role is to listen closely, offer clarity when things feel tangled, and bring in evidence-based approaches in a way that feels clear and practical.
+                        </p>
+                        <a href="#" class="btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
         <!-- skills-section end -->
 
 
@@ -720,6 +1095,29 @@ Each session runs for 50 minutes — a structured, clinically informed space whe
 
     <!-- main-js -->
     <script src="assets/js/script.js"></script>
+    <script>
+        const slides = document.querySelectorAll('.slide');
+const next = document.querySelector('.next');
+const prev = document.querySelector('.prev');
+
+let index = 0;
+
+function showSlide(i) {
+  slides.forEach(slide => slide.classList.remove('active'));
+  slides[i].classList.add('active');
+}
+
+next.addEventListener('click', () => {
+  index = (index + 1) % slides.length;
+  showSlide(index);
+});
+
+prev.addEventListener('click', () => {
+  index = (index - 1 + slides.length) % slides.length;
+  showSlide(index);
+});
+
+    </script>
 
 </body><!-- End of .page_wrapper -->
 

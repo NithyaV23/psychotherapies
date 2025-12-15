@@ -159,6 +159,238 @@
         text-align: center;
     }
 }
+/* about aravinda */
+.about-section {
+    padding: 80px 20px;
+    background-color: #f5f5f5;
+}
+
+.about-section .image-block {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: transform 0.5s;
+}
+
+.about-section .image-block:hover {
+    transform: scale(1.03);
+}
+
+.about-section .image-wrapper {
+    position: relative;
+}
+
+.about-section .image-wrapper .image img {
+    width: 100%;
+    display: block;
+    border-radius: 15px;
+}
+
+.about-section .image-wrapper .image.image-2 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 90%;
+    opacity: 0.8;
+}
+
+.about-section .video-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about-section .video-btn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background-color: rgba(255, 107, 107, 0.8);
+    border-radius: 50%;
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.about-section .video-btn a:hover {
+    background-color: #ff4757;
+}
+
+.about-section .content-block {
+    padding: 20px 30px;
+}
+
+.about-section .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.about-section .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #ff6b6b;
+    font-weight: 500;
+}
+
+.about-section .description {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.about-section .btn-primary {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #ff6b6b;
+    color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.about-section .btn-primary:hover {
+    background: #ff4757;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .about-section {
+        padding: 60px 20px;
+    }
+
+    .about-section .section-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .about-section .subtitle {
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    .about-section .description {
+        text-align: center;
+    }
+
+    .about-section .btn-primary {
+        display: block;
+        margin: 20px auto 0;
+        text-align: center;
+    }
+
+    .about-section .image-wrapper .image.image-2 {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        opacity: 1;
+        margin-top: 20px;
+    }
+}
+/* how ic ca help */
+.service-section {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+}
+
+.service-section .section-title {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+    color: #222;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.service-card .icon-box {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+}
+
+.service-card .icon-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.service-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.service-card h3 a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+}
+
+.service-card h3 a:hover {
+    color: #ff6b6b;
+}
+
+.service-card p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.service-card .read-more {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #ff6b6b;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s;
+}
+
+.service-card .read-more:hover {
+    color: #222;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .service-section .section-title {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
+    .service-card {
+        padding: 25px 15px;
+    }
+}
+
 
 </style>
 
@@ -343,7 +575,7 @@
 
 
         <!--Page Title-->
-        <section class="page-title" style="background-image: url(assets/images/background/provid.jpg);">
+        <section class="page-title" style="background-image: url(assets/images/banner/home4.jpg);">
             <div class="auto-container">
                 <div class="content-box clearfix">
                     <div class="shape">
@@ -351,7 +583,7 @@
                         <div class="shape-2"></div>
                         <div class="shape-3"></div>
                     </div>
-                    <a href="index.html">Back To Home Page.</a>
+            
                     <h1>About Us</h1>
                 </div>
             </div>
@@ -368,208 +600,132 @@
 
 
         <!-- about-section -->
- <section class="about-section">
-            <div class="auto-container">
-                <div class="row clearfix">
-                    <div class="col-lg-6 col-md-12 col-sm-12 image-column">
-                        <div class="image_block_1">
-                            <div class="image-box">
-                                <figure class="image image-1"><img src="assets/images/resource/home2.jpg" alt=""></figure>
-                                <figure class="image image-2"><img src="assets/images/resource/about-2.jpg" alt=""></figure>
-                                <div class="shape" style="background-image: url(assets/images/shape/shape-2.png);"></div>
-                                
-                                <div class="video-btn">
-                                    <a href="https://www.youtube.com/watch?v=nfP5N9Yc72A&amp;t=28s" class="lightbox-image" data-caption=""><i class="flaticon-play"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12 content-column">
-                        <div class="content_block_1">
-                            <div class="content-box">
-                                <div class="sec-title">
-                                    <h2>About Aravinda</h2>
-                                </div>
-                                
-                                <div class="text">
-                                    <p>We all carry silent battles. Some are loud and visible, but most live quietly within us  in our anxieties, our relationships, or in the quiet moments when we feel unlike ourselves. Therapy is where the unspoken can find expression, and I am here to help you pause, reflect, and move through these moments with clarity. 
+<section class="about-section">
+    <div class="auto-container">
+        <div class="row clearfix">
 
-I am Aravinda Nandakumar, a Counselling and Family Therapist trained in advanced psychotherapies. I work with individuals, couples, and families who are facing challenges such as anxiety, grief, trauma, and relational conflict. 
-
-</p>
-              
-<div class="sec-title">
-                                    <h2>Professional Background</h2>
-                                </div>
-                                
-                                <div class="text">
-                                    <p> I hold an M.Sc. in Counselling and Family Therapy (First Class with Distinction, IGNOU), and have continued to deepen my expertise through advanced certifications from institutions such as NIMHANS, the American Psychological Association (APA), and the University of Pennsylvania. My expertise spans Cognitive Behavioural Therapy, mindfulness, relationship and pre-marital counselling, substance abuse work, abnormal psychology, positive psychology, and trauma recovery. 
-
-I continually review new research and emerging therapeutic developments, integrating effective practices so the support you receive is nuanced and clinically refined. 
-
-My clinical experience includes my time at Spandana Rehabilitation Centre, where I conducted psychological assessments and supported patients navigating depression, substance dependence, and complex family dynamics. 
-
-
-</p>
-                               
-                            </div>
-                        </div>
+            <!-- Image Column -->
+            <div class="col-lg-6 col-md-12 col-sm-12 image-column">
+                <div class="image-block">
+                    <div class="image-wrapper">
+                        <figure class="image">
+                            <img src="assets/images/resource/home2.jpg" alt="About Aravinda">
+                        </figure>
                     </div>
                 </div>
             </div>
-        </section>
+
+            <!-- Content Column -->
+            <div class="col-lg-6 col-md-12 col-sm-12 content-column">
+                <div class="content-block">
+                    <h2 class="section-title">About Aravinda</h2>
+
+                    <p class="description">
+                        We all carry silent battles. Some are loud and visible, but most live quietly within us in our anxieties, our relationships, or in the quiet moments when we feel unlike ourselves. Therapy is where the unspoken can find expression, and I am here to help you pause, reflect, and move through these moments with clarity. I am Aravinda Nandakumar, a Counselling and Family Therapist trained in advanced psychotherapies. I work with individuals, couples, and families who are facing challenges such as anxiety, grief, trauma, and relational conflict.
+                    </p>
+
+                    <h5 class="subtitle">Professional Background</h5>
+
+                    <p class="description">
+                        I hold an M.Sc. in Counselling and Family Therapy (First Class with Distinction, IGNOU), and have continued to deepen my expertise through advanced certifications from institutions such as NIMHANS, the American Psychological Association (APA), and the University of Pennsylvania. My expertise spans Cognitive Behavioural Therapy, mindfulness, relationship and pre-marital counselling, substance abuse work, abnormal psychology, positive psychology, and trauma recovery. I continually review new research and emerging therapeutic developments, integrating effective practices so the support you receive is nuanced and clinically refined. My clinical experience includes my time at Spandana Rehabilitation Centre, where I conducted psychological assessments and supported patients navigating depression, substance dependence, and complex family dynamics.
+                    </p>
+
+                    <a href="#" class="btn-primary">Book a Session</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
         <!-- about-section end -->
 
 
         <!-- service-style-three -->
-     <section class="service-section bg-color-1 centred">
-
-    <!-- ADDING CENTER HEADING -->
+  <section class="service-section">
     <div class="auto-container">
-        <div class="sec-title centred">
-            <h2>How I Can Help</h2>
-        </div>
-    </div>
-    
-    <!-- END -->
+        <h1 class="section-title">How I Can Help</h1>
+        <div class="services-grid">
 
-    
-  <section class="service-section bg-color-1 centred">
-
-
- 
-
-
-       
-    <div class="auto-container">
-        <div class="row clearfix">
-
-            <div class="col-lg-3 col-md-6 col-sm-12 service-block">
-                <div class="service-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-                    <div class="inner-box">
-                        <figure class="icon-box"><img src="assets/images/icons/Individual Therapy.jpg" alt=""></figure>
-                        <h3><a href="service-details.html">Individual Therapy</a></h3>
-                        <p style="color:black; transition:0.3s;"
-   onmouseover="this.style.color='white'"
-   onmouseout="this.style.color='black'">
-
-  Life has its seasons, some light, others heavy. If you’re carrying anxiety, grief,
-  exhaustion, or self-doubt, these sessions are a place to set it down for a while.
-  We’ll bring in tools like CBT and mindfulness, but more than that, we’ll make room
-  for you to feel steady again.
-
-</p>
-
-                            <div class="link" style="margin-top:10px;">
-                <a href=""
-                   style="color:black; font-weight:600; font-size:15px; display:inline-flex; align-items:center; gap:5px; transition:0.3s;"
-                   onmouseover="this.style.color='white'"
-                   onmouseout="this.style.color='black'">
-                     <span style="font-size:18px; transition:0.3s;">→</span>
-                </a>
-            </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-sm-12 service-block">
-                <div class="service-block-one wow fadeInUp animated" data-wow-delay="200ms" data-wow-duration="1500ms">
-                    <div class="inner-box">
-                        <figure class="icon-box"><img src="assets/images/icons/Couples Therapy.jpg" alt=""></figure>
-                        <h3><a href="service-details.html">Couples Therapy</a></h3>
-                       <p style="color:black; transition:0.3s;"
-   onmouseover="this.style.color='white'"
-   onmouseout="this.style.color='black'">
-
-  Life has its seasons, some light, others heavy. If you’re carrying anxiety, grief,
-  exhaustion, or self-doubt, these sessions are a place to set it down for a while.
-  We’ll bring in tools like CBT and mindfulness, but more than that, we’ll make room
-  for you to feel steady again.
-
-</p>
-
-                           <div class="link" style="margin-top:10px;">
-                <a href=""
-                   style="color:black; font-weight:600; font-size:15px; display:inline-flex; align-items:center; gap:5px; transition:0.3s;"
-                   onmouseover="this.style.color='white'"
-                   onmouseout="this.style.color='black'">
-                    <span style="font-size:18px; transition:0.3s;">→</span>
-                </a>
-            </div>
-                    </div>
-                </div>
-            </div>
-
-          <div class="col-lg-3 col-md-6 col-sm-12 service-block">
-    <div class="service-block-one wow fadeInUp animated" data-wow-delay="400ms" data-wow-duration="1500ms">
-        <div class="inner-box">
-            <figure class="icon-box"><img src="assets/images/icons/Family Therapy.jpg" alt=""></figure>
-
-            <h3><a href="family.html">Family Therapy</a></h3>
-
-            <!-- P TAG HOVER COLOR WORKING -->
-            <p style="color:black; transition:0.3s;"
-               onmouseover="this.style.color='white'"
-               onmouseout="this.style.color='black'">
-
-                Life has its seasons, some light, others heavy. If you’re carrying anxiety, grief,
-                exhaustion, or self-doubt, these sessions are a place to set it down for a while.
-                We’ll bring in tools like CBT and mindfulness, but more than that, we’ll make room
-                for you to feel steady again.
-            </p>
-
-            <!-- READ MORE TEXT WITH HOVER COLOR -->
-            <div class="link" style="margin-top:10px;">
-                <a href=""
-                   style="color:black; font-weight:600; font-size:15px; display:inline-flex; align-items:center; gap:5px; transition:0.3s;"
-                   onmouseover="this.style.color='white'"
-                   onmouseout="this.style.color='black'">
-                    <span style="font-size:18px; transition:0.3s;">→</span>
+            <!-- Service Card -->
+            <div class="service-card">
+                <figure class="icon-box">
+                    <img src="assets/images/icons/Individual Therapy.jpg" alt="Individual Therapy">
+                </figure>
+                <h3><a href="individualtherapy.html">Individual Therapy</a></h3>
+                <p>
+                    Life has its seasons, some light, others heavy. If you’re carrying anxiety, grief,
+                    exhaustion, or self-doubt, these sessions are a place to set it down for a while.
+                    We’ll bring in tools like CBT and mindfulness, but more than that, we’ll make room
+                    for you to feel steady again.
+                </p>
+                <a href="individualtherapy.html" class="read-more">
+                    Read More <span>→</span>
                 </a>
             </div>
 
-        </div>
-    </div>
-</div>
-
-
-            <div class="col-lg-3 col-md-6 col-sm-12 service-block">
-                <div class="service-block-one wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
-                    <div class="inner-box">
-                        <figure class="icon-box"><img src="assets/images/icons/Group therapy.jpg" alt=""></figure>
-                        <h3><a href="Group.html">Group therapy</a></h3>
-                       <p style="color:black; transition:0.3s;"
-   onmouseover="this.style.color='white'"
-   onmouseout="this.style.color='black'">
-
-  Life has its seasons, some light, others heavy. If you’re carrying anxiety, grief,
-  exhaustion, or self-doubt, these sessions are a place to set it down for a while.
-  We’ll bring in tools like CBT and mindfulness, but more than that, we’ll make room
-  for you to feel steady again.
-
-</p>
-
-                           <div class="link" style="margin-top:10px;">
-                <a href=""
-                   style="color:black; font-weight:600; font-size:15px; display:inline-flex; align-items:center; gap:5px; transition:0.3s;"
-                   onmouseover="this.style.color='white'"
-                   onmouseout="this.style.color='black'">
-                  <span style="font-size:18px; transition:0.3s;">→</span>
+            <!-- Service Card -->
+            <div class="service-card">
+                <figure class="icon-box">
+                    <img src="assets/images/icons/Couples Therapy.jpg" alt="Couples Therapy">
+                </figure>
+                <h3><a href="Couples.html">Couples Therapy</a></h3>
+                <p>
+                    Life has its seasons, some light, others heavy. If you’re carrying anxiety, grief,
+                    exhaustion, or self-doubt, these sessions are a place to set it down for a while.
+                    We’ll bring in tools like CBT and mindfulness, but more than that, we’ll make room
+                    for you to feel steady again.
+                </p>
+                <a href="Couples.html" class="read-more">
+                    Read More <span>→</span>
                 </a>
             </div>
-                    </div>
-                </div>
+
+            <!-- Service Card -->
+            <div class="service-card">
+                <figure class="icon-box">
+                    <img src="assets/images/icons/Family Therapy.jpg" alt="Family Therapy">
+                </figure>
+                <h3><a href="family.html">Family Therapy</a></h3>
+                <p>
+                    Life has its seasons, some light, others heavy. If you’re carrying anxiety, grief,
+                    exhaustion, or self-doubt, these sessions are a place to set it down for a while.
+                    We’ll bring in tools like CBT and mindfulness, but more than that, we’ll make room
+                    for you to feel steady again.
+                </p>
+                <a href="family.html" class="read-more">
+                    Read More <span>→</span>
+                </a>
+            </div>
+
+            <!-- Service Card -->
+            <div class="service-card">
+                <figure class="icon-box">
+                    <img src="assets/images/icons/Group therapy.jpg" alt="Group Therapy">
+                </figure>
+                <h3><a href="Group.html">Group Therapy</a></h3>
+                <p>
+                    Life has its seasons, some light, others heavy. If you’re carrying anxiety, grief,
+                    exhaustion, or self-doubt, these sessions are a place to set it down for a while.
+                    We’ll bring in tools like CBT and mindfulness, but more than that, we’ll make room
+                    for you to feel steady again.
+                </p>
+                <a href="Group.html" class="read-more">
+                    Read More <span>→</span>
+                </a>
             </div>
 
         </div>
     </div>
 </section>
-</section>
+
         <!-- service-style-three end -->
 
 
         <!-- video-section -->
-        <section class="video-section centred" style="background-image: url(assets/images/background/provid.jpg);">
+        <section class="video-section centred" style="background-image: url(assets/images/banner/home5.jpg);">
             <div class="auto-container">
                 <div class="sec-title light centred">
                     <i class="flaticon-brain-1"></i>
@@ -577,9 +733,7 @@ My clinical experience includes my time at Spandana Rehabilitation Centre, where
                 </div>
                 <div class="inner-box">
                     <h2>The importance of the optimal <br />nurse to patient ratio.</h2>
-                    <div class="video-btn">
-                        <a href="https://www.youtube.com/watch?v=nfP5N9Yc72A&amp;t=28s" class="lightbox-image" data-caption=""><i class="flaticon-play-button-1"></i></a>
-                    </div>
+                 
                 </div>
             </div>
         </section>
