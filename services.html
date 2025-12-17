@@ -239,21 +239,24 @@
 /* Card */
 .service-card {
   background: #fff;
-  padding: 35px 25px;
-  text-align: center;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-  transition: all 0.4s ease;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  padding: 20px;
   cursor: pointer;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
-/* Hover */
+/* hover stays same */
 .service-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 45px rgba(0,0,0,0.12);
-  background: #6589b9;
-  color: #fff;
+  transform: translateY(-30px);
 }
+
+/* CLICK animation (swol / swell effect) */
+.service-card.active {
+  transform: scale(1.06);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.25);
+}
+
 
 .service-card:hover h3,
 .service-card:hover p {
@@ -406,6 +409,9 @@ html {
     .therapy-techniques-heading p {
         font-size: 14px;
     }
+}
+html {
+  scroll-behavior: smooth;
 }
 
 </style>
@@ -613,48 +619,36 @@ html {
 
 
     <div class="services-grid">
-        <div class="service-card">
-        <img src="assets/images/icons/Individual Therapy.jpg" alt="">
-        <h3 id="individual">Individual Therapy</h3>
-        <p>Life has its seasons, some light, others heavy. If you’re carrying anxiety, grief, exhaustion, or self-doubt, these sessions are a place to set it down for a while. We’ll bring in tools like CBT and mindfulness, but more than that, we’ll make room for you to feel steady again.</p>
-      <a href="individualtherapy.html" class="read-more">
-  Read More <span>→</span>
-</a>
-    </div>
-      <div class="service-card">
-        <img src="assets/images/icons/Couples Therapy.jpg" alt="">
-        <h3 id="couples">Couples Therapy</h3>
-        <p>Every relationship has its moments — of closeness, of distance, of trying to understand one another. Couples therapy is about having a space to talk through conflicts, communication struggles, or trust concerns with guidance and care, so you can find your way back to each other.</p>
-      <a href="Couples.html" class="read-more">
-                    Read More <span>→</span>
-                </a>
-    </div>
-        <div class="service-card">
-        <img src="assets/images/icons/Family Therapy.jpg" alt="">
-        <h3 id="family">Family Therapy</h3>
-        <p>Families are beautifully complex. Sometimes they lift us up, sometimes they leave us tangled. Family sessions create space to untangle those knots — working through conflict, stress, or communication breakdowns, and finding gentler, healthier ways to connect.</p>
-      <a href="family.html" class="read-more">
-                    Read More <span>→</span>
-                </a>
-    </div>
-    
-      
-      
-        <div class="service-card">
-        <img src="assets/images/icons/Group therapy.jpg" alt="">
-        <h3 id="group">Group Therapy</h3>
-        <p>Group therapy offers a space to share your experiences with others who understand what you’re going through. It’s a place to feel less alone, to learn from different perspectives, and to build insight and confidence in a setting that’s supportive and steady.</p>
-       <a href="Group.html" class="read-more">
-                    Read More <span>→</span>
-                </a>
-    </div>
+         <div class="service-card" data-link="individualtherapy.html">
+    <img src="assets/images/icons/Individual Therapy.jpg" alt="">
+    <h3 id="individual">Individual Therapy</h3>
+    <p>Life has its seasons, some light, others heavy. If you’re carrying anxiety, grief, exhaustion, or self-doubt, these sessions are a place to set it down for a while. We’ll bring in tools like CBT and mindfulness, but more than that, we’ll make room for you to feel steady again.</p>
+  </div>
+
+  <div class="service-card" data-link="Couples.html">
+    <img src="assets/images/icons/Couples Therapy.jpg" alt="">
+    <h3 id="couples">Couples Therapy</h3>
+    <p>Every relationship has its moments — of closeness, of distance, or trying to understand one another. Couples therapy is about having a space to talk through conflicts, communication struggles, or trust concerns with guidance and care, so you can find your way back to each other.</p>
+  </div>
+
+  <div class="service-card" data-link="family.html">
+    <img src="assets/images/icons/Family Therapy.jpg" alt="">
+    <h3 id="family">Family Therapy</h3>
+    <p>Families are beautifully complex. Sometimes they lift us up, sometimes they leave us tangled. Family sessions create space to untangle those knots — working through conflict, stress, or communication breakdowns, and finding gentler, healthier ways to connect.</p>
+  </div>
+
+  <div class="service-card" data-link="Group.html">
+    <img src="assets/images/icons/Group therapy.jpg" alt="">
+    <h3 id="group">Group Therapy</h3>
+    <p>Group therapy offers a space to share your experiences with others who understand what you’re going through. It’s a place to feel less alone, to learn from different perspectives, and to build insight and confidence in a setting that’s supportive and steady.</p>
+  </div>
         <!-- NEW HEADING ABOVE SCHEMA THERAPY -->
       <div class="therapy-techniques-heading">
         <h1>
           If you're curious about some of the therapeutic techniques I specialise in,
           here’s a brief look at a few approaches I draw from in my work.
         </h1>
-   
+        <p>Evidence-based therapies tailored to your needs</p>
       </div>
 
       <div class="service-card">
@@ -977,6 +971,22 @@ Finding the right therapist is deeply personal. If I am not the right fit, I wil
 
     <!-- main-js -->
     <script src="assets/js/script.js"></script>
+    <script>
+  document.querySelectorAll('.service-card').forEach(card => {
+    card.addEventListener('click', function () {
+      const link = this.dataset.link;
+
+      // add click animation
+      this.classList.add('active');
+
+      // wait for animation, then go to page
+      setTimeout(() => {
+        window.location.href = link;
+      }, 350); // match CSS transition time
+    });
+  });
+</script>
+
 
 </body><!-- End of .page_wrapper -->
 
