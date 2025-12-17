@@ -29,95 +29,6 @@
 <link href="assets/css/responsive.css" rel="stylesheet">
 <link rel="icon" type="image/png" href="assets/images/favicon.png">
 <style>
-   
-   
-.therapy-section {
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 20px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.therapy-title {
-    font-size: 32px;
-    font-weight: 700;
-    color: #6589b9;
-    text-align: center;
-    margin-bottom: 25px;
-}
-
-.therapy-box {
-    background: #ffffff;
-    border-left: 6px solid #6589b9;
-    padding: 25px;
-    margin-bottom: 25px;
-    border-radius: 12px;
-    box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
-    transition: 0.3s;
-}
-
-.therapy-box:hover {
-    background: #6589b9;
-    color: #ffffff;
-}
-
-.therapy-box h3 {
-    margin-top: 0;
-    font-size: 22px;
-    color: #6589b9;
-    transition: 0.3s;
-}
-
-.therapy-box:hover h3 {
-    color: #ffffff;
-}
-
-.therapy-box ul {
-    margin-top: 15px;
-    padding-left: 20px;
-}
-
-.therapy-box ul li {
-    margin-bottom: 8px;
-    line-height: 1.5;
-}
-
-.readmore-btn {
-    margin-top: 15px;
-    display: inline-block;
-    background: #6589b9;
-    color: #fff;
-    padding: 8px 16px;
-    border-radius: 6px;
-    font-size: 15px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s;
-}
-
-.readmore-btn:hover {
-    background: #fff;
-    color: #6589b9;
-    box-shadow: 0px 3px 10px rgba(0,0,0,0.15);
-}
-
-/* MOBILE */
-@media(max-width:768px){
-    .therapy-title{
-        font-size: 26px;
-    }
-    .therapy-box{
-        padding: 18px;
-    }
-    .therapy-box h3{
-        font-size: 20px;
-    }
-}
-
-
- 
-
-
     
     .footer-widget .links-list {
     display: flex;
@@ -197,6 +108,309 @@
         text-align: center;
     }
 }
+/* benefit */
+.skills-section {
+    padding: 80px 0;
+    background-color: #f5f5f5;
+}
+
+.skills-section .image-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: transform 0.5s;
+}
+
+.skills-section .image-box:hover {
+    transform: scale(1.05);
+}
+
+.skills-section .image-box img {
+    width: 100%;
+    display: block;
+    border-radius: 15px;
+}
+
+.skills-section .content-box {
+    padding: 20px;
+}
+
+.skills-section .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.skills-section .description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.skills-section .btn-primary {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #ff6b6b;
+    color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.skills-section .btn-primary:hover {
+    background: #ff4757;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .skills-section .section-title {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-section {
+        padding: 50px 20px;
+    }
+
+    .skills-section .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills-section .section-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .skills-section .description {
+        text-align: center;
+    }
+
+    .skills-section .btn-primary {
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+
+    .skills-section .image-box {
+        margin-bottom: 30px;
+    }
+}
+/* service icon */
+/* Section */
+.therapy-services {
+  padding: 80px 20px;
+  background: #f7f9f8;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Heading */
+.section-heading {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #2c2c2c;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 50px;
+  font-size: 16px;
+}
+
+/* Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* Card */
+.service-card {
+  background: #fff;
+  padding: 35px 25px;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+/* Hover */
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+  background: #6589b9;
+  color: #fff;
+}
+
+.service-card:hover h3,
+.service-card:hover p {
+  color: #fff;
+}
+
+/* Icon */
+.service-card img {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+/* Title */
+.service-card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #2c2c2c;
+}
+
+/* Text */
+.service-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .section-heading {
+    font-size: 28px;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+/* READMORE */
+.read-more {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  color: #333; /* dark text */
+  background: #f5f5f5; /* light gray background */
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: 1px solid #ddd; /* subtle border */
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  position: relative;
+}
+
+.read-more span {
+  display: inline-block;
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.read-more:hover {
+  background: #e0e0e0; /* slightly darker gray */
+  color: #000; /* dark text on hover */
+}
+
+.read-more:hover span {
+  transform: translateX(3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .read-more {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+/* service new design */
+.therapy-details {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Therapy Card */
+.therapy-card {
+    background: #f0f4f8; /* very light pastel blue */
+    padding: 30px 25px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    border-left: 5px solid #7fb3d5; /* softer accent color */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.therapy-card:hover {
+    background: #d6e4f0; /* slightly darker light color on hover */
+    color: #2c3e50; /* maintain readable text */
+    transform: translateY(-3px);
+}
+
+.therapy-card h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #3498db; /* header accent color */
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.therapy-card:hover h2 {
+    color: #2c3e50; /* dark text on hover */
+}
+
+/* Lists */
+.therapy-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.therapy-card ul li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+.therapy-card ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #3498db; /* bullet accent */
+    font-weight: bold;
+}
+
+/* Paragraphs */
+.therapy-card p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #2c3e50;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .therapy-card {
+        padding: 20px;
+    }
+    .therapy-card h2 {
+        font-size: 22px;
+    }
+    .therapy-card ul li {
+        font-size: 15px;
+        padding-left: 20px;
+    }
+    .therapy-card p {
+        font-size: 15px;
+    }
+}
+
 
 </style>
 
@@ -213,6 +427,7 @@
 
 
         <!-- main header -->
+       <!-- main header -->
         <header class="main-header style-one">
             <!-- header-top -->
             <div class="header-top">
@@ -222,10 +437,10 @@
                             <div class="select-box">
                                 <select class="wide">
                                    <option data-display="What are you looking for">What are you looking for</option>
-                                   <option value="1">Clinical Psychology</option>
-                                   <option value="2">Career Counseling</option>
-                                   <option value="3">Relationship Issues</option>
-                                   <option value="4">Others</option>
+                                   <option value="1">Individual Therapy</option>
+                                   <option value="2">Couples Therapy</option>
+                                   <option value="3">Family Therapy</option>
+                                   <option value="4">Group Therapy</option>
                                 </select>
                             </div>
                         </div>
@@ -236,7 +451,7 @@
                                     <span>English</span>
                                     <ul class="language-dropdown clearfix">
                                         <li><a href="index.html">English</a></li>
-                                      
+                                       
                                     </ul>
                                 </div>
                                 <div class="currency">
@@ -244,29 +459,27 @@
                                     <span>USD</span>
                                     <ul class="currency-dropdown clearfix">
                                         <li><a href="index.html">USD</a></li>
-                                    
-                                        <li><a href="index.html">Uro</a></li>
+                                     
+                                       
                                         <li><a href="index.html">Pound</a></li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="login-info pull-left">
-                                <i class="flaticon-secured-lock"></i>
-                                <a href="index.html">Login</a> / <a href="index.html">Register</a>
-                            </div>
+                           
                         </div>
                     </div>
                 </div>
             </div>
             <!-- header-upper -->
-               <!-- header-upper -->
-             <div class="header-upper">
+          <div class="header-upper">
     <div class="header-container">
-<div class="logo-box">
-            <img src="assets/images/logo.jpg" alt="Logo" style="width: 310px; height: 100px;" >
+
+        <!-- Logo -->
+        <div class="logo-box">
+            <img src="assets/images/logo (2).png" alt="Logo"   >
         </div>
 
-         <!-- Right Side Info -->
+        <!-- Right Side Info -->
         <div class="header-info">
             <ul class="info-list">
                 <li>
@@ -280,9 +493,9 @@
 
     </div>
 </div>
-       
+
             <!-- header-lower -->
-             <div class="header-lower">
+            <div class="header-lower">
                 <div class="auto-container">
                     <div class="outer-box clearfix">
                         <div class="menu-area pull-left clearfix">
@@ -323,7 +536,6 @@
                 </div>
             </div>
 
-
             <!--sticky Header-->
             <div class="sticky-header">
                 <div class="auto-container">
@@ -355,13 +567,13 @@
             <div class="close-btn"><i class="fas fa-times"></i></div>
             
             <nav class="menu-box">
-                <div class="nav-logo"><a href="index.html"><img src="assets/images/logo.jpg" alt="" title=""></a></div>
+                <div class="nav-logo"><a href="index.html"><img src="assets/images/logo (2).png" alt="" title=""></a></div>
                 <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
                 <div class="contact-info">
                     <h4>Contact Info</h4>
                     <ul>
                        
-                        <li><a href="tel:+8801682648101">+88 01682648101</a></li>
+                        <li><a href="tel:+8801682648101">9901444606</a></li>
                         <li><a href="mailto:aravindayn@gmail.com">aravindayn@gmail.com</a></li>
                     </ul>
                 </div>
@@ -378,74 +590,39 @@
         </div><!-- End Mobile Menu -->
 
 
-  
+      <section class="therapy-details">
 
-
-<section class="therapy-section">
-
-    <h2 class="therapy-title">Family Therapy</h2>
-
-    <!-- MAIN CONCERNS -->
-    <div class="therapy-box">
-        <h3>Family Sessions Can Help With</h3>
+    <!-- Concerns Section -->
+    <div class="therapy-card">
+        <h2>Family Therapy</h2>
         <ul>
             <li>Ongoing conflict or strained relationships</li>
             <li>Parent–child tension</li>
             <li>Parenting challenges</li>
             <li>Sibling rivalry</li>
             <li>Cultural and joint-family dynamics</li>
-            <li>Major transitions such as illness, loss, or relocation</li>
+            <li>Major transitions (illness, loss, relocation)</li>
         </ul>
     </div>
 
-    <!-- ADDITIONAL FOCUS -->
-    <div class="therapy-box">
-        <h3>Additional Areas of Clinical Focus</h3>
+    <!-- Additional Focus Section -->
+    <div class="therapy-card">
+        <h2>Additional Areas of Clinical Focus</h2>
         <ul>
             <li>Performance-related concerns, including peak performance and performance anxiety</li>
             <li>Cultural and identity-related stressors, including racial or societal pressures</li>
             <li>Specific fears such as fear of flying or medical/health-related anxieties</li>
-            <li>Behavioural patterns that affect daily functioning, including eating disorders</li>
+            <li>Behavioural patterns that affect daily functioning including eating disorders</li>
             <li>Difficulties linked to chronic stress or emotional overwhelm</li>
             <li>Adjustment concerns following major life changes or transitions</li>
         </ul>
     </div>
 
-    <!-- HOW I WORK -->
-    <div class="therapy-box">
-        <h3>How I Work</h3>
+    <!-- How I Work Section -->
+    <div class="therapy-card">
+        <h2>How I Work</h2>
         <p>
-            Each session is 50 minutes, offered in-person or online. Think of it as time set aside —
-            structured, supportive, and yours.
-        </p>
-    </div>
-
-    <!-- THERAPEUTIC TECHNIQUES -->
-    <div class="therapy-box">
-        <h3>Therapeutic Techniques</h3>
-        <ul>
-            <li>Cognitive Behavioural Therapy (CBT)</li>
-            <li>Dialectical Behaviour Therapy (DBT)</li>
-            <li>Acceptance & Commitment Therapy (ACT)</li>
-            <li>Schema Therapy</li>
-            <li>EMDR (Eye Movement Desensitisation and Reprocessing)</li>
-            <li>Emotion-Focused Therapy (EFT)</li>
-            <li>Exposure & Response Prevention (ERP)</li>
-            <li>Interpersonal & Social Rhythm Therapy</li>
-            <li>Compassion-Focused Therapy (CFT)</li>
-            <li>Mindfulness-Based Interventions</li>
-            <li>Motivational Enhancement Therapy (MET)</li>
-        </ul>
-    </div>
-
-    <!-- CLOSING -->
-    <div class="therapy-box">
-        <p>
-            Most people come to therapy for a specific reason, but stay because they notice something
-            shifting — the weight feels lighter, the mind quiets, and the world opens a little at a time.
-            Techniques support the process, but the real work happens in the steady rhythm of showing up
-            and being met where you are. You don’t have to navigate it alone — when you're ready,
-            I’m here to walk with you.
+            Each session is 50 minutes, offered in-person or online. Think of it as time set aside — structured, supportive, and entirely yours.
         </p>
     </div>
 
@@ -453,61 +630,66 @@
 
 
 
+     
 
-        <!-- service-style-three end -->
 
-
-     <section class="chooseus-section">
-            <div class="tabs-box">
-                <div class="title-inner">
-                    <div class="auto-container">
-                        <div class="sec-title light centred">
-                            <h6> BENEFITS</h6>
-                            <h2>What You Can Expect </h2>
-                        </div>
-                        
-                       
-                    </div>
-                </div>
-               
-            </div>
-        </section>
-         <section class="skills-section">
+      <section class="skills-section pt-120">
             <div class="auto-container">
                 <div class="row align-items-center clearfix">
                     <div class="col-xl-6 col-lg-12 col-md-12 image-column">
                         <div class="image_block_2">
                             <div class="image-box">
                                 <figure class="image"><img src="assets/images/resource/Artboard 1.jpg" alt=""></figure>
-                                <!-- <div class="text">
-                                    <h6>Our Skill</h6>
-                                </div> -->
+                                
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-12 col-md-12 content-column">
                         <div class="content_block_4">
                             <div class="content-box">
-                                
+                                <div class="sec-title">
+                                    <h2>Therapeutic Approach</h2>
+                                </div>
                                 <div class="text">
-<p style="font-style: bold;">Therapy with me is calm, collaborative, and paced with intention. Whether we meet in-person or online, you can expect a space where your thoughts are taken seriously, your feelings are met with respect, and your experiences are never rushed or minimised. My role is to listen closely, offer clarity when things feel tangled, and bring in evidence-based approaches in a way that feels clear and practical.</p>                                </div>
-                                
+                                    <p>I view therapy as a collaborative process: one that requires clarity, patience, and respect. My role is to listen with empathy, to ask the questions that matter, and to create a structured yet compassionate space where new possibilities for change can emerge. 
+
+The work we do together is grounded in evidence-based methods, but held with the kind of warmth and steadiness that makes honest exploration feel possible. In-person or online, I show up with the same care, presence, and calm, so you feel supported wherever you are.
+
+Finding the right therapist is deeply personal. If I am not the right fit, I will guide you toward someone who may be — because what matters most is that you feel supported and understood.
+</p>
+                                </div>
+                               
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+       
 
 
     
 
 
         <!-- video-section -->
+        <section class="video-section centred" style="background-image: url(assets/images/banner/home4.jpg);">
+            <div class="auto-container">
+                <div class="sec-title light centred">
+                  
+                    <h6>We Provide</h6>
+                </div>
+                <div class="inner-box">
+                    <h2>The importance of the optimal <br />nurse to patient ratio.</h2>
+                  
+                </div>
+            </div>
+        </section>
+        <!-- video-section end -->
+
+
+        <!-- skills-section -->
         
-
-
-       
+        <!-- skills-section end -->
 
 
         <!-- testimonial-section -->
@@ -598,7 +780,7 @@
                     <div class="row clearfix">
                         <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
                             <div class="footer-widget logo-widget">
-                                <figure class="footer-logo"><a href="index.html"><img src="assets/images/logo-removebg-preview.png" alt=""></a></figure>
+                                <figure class="footer-logo"><a href="index.html"><img src="assets/images/logobelow.png" alt=""></a></figure>
                                 <div class="text">
                                     <p>providing safe, caring, professional guidance to help you heal and grow.</p>
                                 </div>

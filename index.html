@@ -159,7 +159,6 @@
         text-align: center;
     }
 }
-/* slider */
 .slider-container {
   position: relative;
   width: 100%;
@@ -167,91 +166,92 @@
   overflow: hidden;
 }
 
+/* Slider */
 .slider {
   width: 100%;
   height: 100%;
   position: relative;
 }
 
+/* Slides */
 .slide {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   opacity: 0;
-  transition: opacity 0.6s ease-in-out;
+  transition: opacity 0.7s ease-in-out;
 }
 
 .slide.active {
   opacity: 1;
 }
 
+/* Image */
 .slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.caption {
-  position: absolute;
-  bottom: 50px;
-  left: 50px;
-  font-size: 2rem;
-  color: #fff;
-  background: rgba(0,0,0,0.5);
-  padding: 10px 20px;
-  border-radius: 6px;
-}
-
-/* Navigation arrows */
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.5);
-  color: white;
-  border: none;
-  font-size: 30px;
-  padding: 10px 15px;
-  cursor: pointer;
-  z-index: 10;
-  border-radius: 50%;
-}
-
-.prev {
-  left: 20px;
-}
-
-.next {
-  right: 20px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .caption {
-    font-size: 1.4rem;
-    bottom: 20px;
-    left: 20px;
-  }
-}
+/* Text Overlay */
 .slide-title {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #fff;
+  max-width: 900px;
+  width: 90%;
+ color: #111;
+text-shadow: 0 1px 3px rgba(255,255,255,0.6);
   font-size: 3rem;
+  font-weight: 600;
   text-align: center;
-  background: rgba(0,0,0,0.4);
-  padding: 15px 30px;
-  border-radius: 10px;
-  max-width: 90%;
+  line-height: 1.4;
+
+  /* Light background */
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  padding: 18px 32px;
+  border-radius: 16px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .slide-title {
+    font-size: 1.8rem;
+    padding: 12px 20px;
+  }
+}
+
+/* Animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -40%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
 }
 
 /* Responsive */
 @media (max-width: 768px) {
+  .slider-container {
+    height: 60vh;
+  }
+
   .slide-title {
     font-size: 1.8rem;
     padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slide-title {
+    font-size: 1.4rem;
   }
 }
 
@@ -605,10 +605,10 @@
                             <div class="select-box">
                                 <select class="wide">
                                    <option data-display="What are you looking for">What are you looking for</option>
-                                   <option value="1">Clinical Psychology</option>
-                                   <option value="2">Career Counseling</option>
-                                   <option value="3">Relationship Issues</option>
-                                   <option value="4">Others</option>
+                                   <option value="1">Individual Therapy</option>
+                                   <option value="2">Couples Therapy</option>
+                                   <option value="3">Family Therapy</option>
+                                   <option value="4">Group Therapy</option>
                                 </select>
                             </div>
                         </div>
@@ -628,15 +628,12 @@
                                     <ul class="currency-dropdown clearfix">
                                         <li><a href="index.html">USD</a></li>
                                      
-                                        <li><a href="index.html">Uro</a></li>
+                                       
                                         <li><a href="index.html">Pound</a></li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="login-info pull-left">
-                                <i class="flaticon-secured-lock"></i>
-                                <a href="index.html">Login</a> / <a href="index.html">Register</a>
-                            </div>
+                           
                         </div>
                     </div>
                 </div>
@@ -647,7 +644,7 @@
 
         <!-- Logo -->
         <div class="logo-box">
-            <img src="assets/images/logoheader.jpg" alt="Logo" style="width: 310px; height: 100px;"  >
+            <img src="assets/images/logo (2).png" alt="Logo"   >
         </div>
 
         <!-- Right Side Info -->
@@ -738,13 +735,13 @@
             <div class="close-btn"><i class="fas fa-times"></i></div>
             
             <nav class="menu-box">
-                <div class="nav-logo"><a href="index.html"><img src="assets/images/logoheader.jpg" alt="" title=""></a></div>
+                <div class="nav-logo"><a href="index.html"><img src="assets/images/logo (2).png" alt="" title=""></a></div>
                 <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
                 <div class="contact-info">
                     <h4>Contact Info</h4>
                     <ul>
-                        <li>Vaishnavi Residency, 67, Kanakapura Main Rd, Yelachenahalli, Naidu Layout, Bengaluru, Karnataka 560111./li>
-                        <li><a href="tel:+8801682648101">+88 01682648101</a></li>
+                        <li> Therapies with Aravinda 67, Kanakapura Main Rd, Yelachenahalli,  Bengaluru, Karnataka 560111.</li>
+                        <li><a href="tel:+8801682648101">9901444606</a></li>
                         <li><a href="mailto:aravindayn@gmail.com">aravindayn@gmail.com</a></li>
                     </ul>
                 </div>
@@ -762,32 +759,33 @@
 
 
         <!-- banner-section -->
-     <div class="slider-container">
+  <div class="slider-container">
 
-  <!-- Slides -->
   <div class="slider">
     <div class="slide active">
       <img src="assets/images/banner/home1.jpg" alt="">
-       <h1 class="slide-title">	Evidence-based, modern therapies grounded in what truly works.</h1>
-    
+      <h1 class="slide-title">
+        Evidence-based, modern therapies grounded in what truly works.
+      </h1>
     </div>
+
     <div class="slide">
       <img src="assets/images/banner/home2.jpg" alt="">
-       <h1 class="slide-title">	Therapy designed around you, because no two minds flourish the same way.</h1>
-   
+      <h1 class="slide-title">
+        Therapy designed around you, because no two minds flourish the same way.
+      </h1>
     </div>
+
     <div class="slide">
       <img src="assets/images/banner/home3.jpg" alt="">
-       <h1 class="slide-title">	Support that’s kind, honest, and actually helpful. </h1>
-    
+      <h1 class="slide-title">
+        Support that’s kind, honest, and actually helpful.
+      </h1>
     </div>
   </div>
 
-  <!-- Navigation arrows -->
-  <button class="arrow prev">&#10094;</button>
-  <button class="arrow next">&#10095;</button>
-
 </div>
+
 
         <!-- banner-section end -->
 
@@ -853,7 +851,7 @@
                     We’ll bring in tools like CBT and mindfulness, but more than that, we’ll make room
                     for you to feel steady again.
                 </p>
-                <a href="individualtherapy.html" class="read-more">
+                <a href="services.html#individual" class="read-more">
                     Read More <span>→</span>
                 </a>
             </div>
@@ -865,12 +863,9 @@
                 </figure>
                 <h3><a href="Couples.html">Couples Therapy</a></h3>
                 <p>
-                    Life has its seasons, some light, others heavy. If you’re carrying anxiety, grief,
-                    exhaustion, or self-doubt, these sessions are a place to set it down for a while.
-                    We’ll bring in tools like CBT and mindfulness, but more than that, we’ll make room
-                    for you to feel steady again.
+                    Every relationship has its moments — of closeness, of distance, of trying to understand one another. Couples therapy is about having a space to talk through conflicts, communication struggles, or trust concerns with guidance and care, so you can find your way back to each other.
                 </p>
-                <a href="Couples.html" class="read-more">
+                <a href="services.html#couples" class="read-more">
                     Read More <span>→</span>
                 </a>
             </div>
@@ -882,12 +877,9 @@
                 </figure>
                 <h3><a href="family.html">Family Therapy</a></h3>
                 <p>
-                    Life has its seasons, some light, others heavy. If you’re carrying anxiety, grief,
-                    exhaustion, or self-doubt, these sessions are a place to set it down for a while.
-                    We’ll bring in tools like CBT and mindfulness, but more than that, we’ll make room
-                    for you to feel steady again.
+                  Families are beautifully complex. Sometimes they lift us up, sometimes they leave us tangled. Family sessions create space to untangle those knots — working through conflict, stress, or communication breakdowns, and finding gentler, healthier ways to connect.
                 </p>
-                <a href="family.html" class="read-more">
+                <a href="services.html#family" class="read-more">
                     Read More <span>→</span>
                 </a>
             </div>
@@ -899,12 +891,9 @@
                 </figure>
                 <h3><a href="Group.html">Group Therapy</a></h3>
                 <p>
-                    Life has its seasons, some light, others heavy. If you’re carrying anxiety, grief,
-                    exhaustion, or self-doubt, these sessions are a place to set it down for a while.
-                    We’ll bring in tools like CBT and mindfulness, but more than that, we’ll make room
-                    for you to feel steady again.
+                    Group therapy offers a space to share your experiences with others who understand what you’re going through. It’s a place to feel less alone, to learn from different perspectives, and to build insight and confidence in a setting that’s supportive and steady.
                 </p>
-                <a href="Group.html" class="read-more">
+                <a href="services.html#group" class="read-more">
                     Read More <span>→</span>
                 </a>
             </div>
@@ -961,7 +950,7 @@
             <div class="col-xl-6 col-lg-12 col-md-12 content-column">
                 <div class="content_block_4">
                     <div class="content-box">
-                        <h2 class="section-title">Our Therapy Approach</h2>
+                        <h2 class="section-title">Therapy Designed Around You</h2>
                         <p class="description">
                             Therapy with me is calm, collaborative, and paced with intention. Whether we meet in-person or online, you can expect a space where your thoughts are taken seriously, your feelings are met with respect, and your experiences are never rushed or minimised. My role is to listen closely, offer clarity when things feel tangled, and bring in evidence-based approaches in a way that feels clear and practical.
                         </p>
@@ -1020,7 +1009,7 @@
                     <div class="row clearfix">
                         <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
                             <div class="footer-widget logo-widget">
-                                <figure class="footer-logo"><a href="index.html"><img src="assets/images/logo-removebg-preview.png" alt=""></a></figure>
+                                <figure class="footer-logo"><a href="index.html"><img src="assets/images/logobelow.png" alt=""></a></figure>
                                 <div class="text">
                                     <p>providing safe, caring, professional guidance to help you heal and grow.</p>
                                 </div>
@@ -1051,7 +1040,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
                             <div class="footer-widget contact-widget">
                                 <ul class="info-list clearfix">
-                                    <li><h6>Address :</h6>Vaishnavi Residency, 67, Kanakapura Main Rd, Yelachenahalli, Naidu Layout, Bengaluru, Karnataka 560111..</li>
+                                    <li><h6>Address :</h6>Therapy with Aravinda 67, Kanakapura Main Rd, Yelachenahalli, Bengaluru, Karnataka 560111..</li>
                                     <li><h6>Telephone :</h6><a href="tel:+99000111222500">9901444606</a></li>
                                     <li><h6>E-mail :</h6><a href="mailto:aravindayn@gmail.com">aravindayn@gmail.com</a></li>
                                 </ul>
@@ -1096,26 +1085,24 @@
     <!-- main-js -->
     <script src="assets/js/script.js"></script>
     <script>
-        const slides = document.querySelectorAll('.slide');
-const next = document.querySelector('.next');
-const prev = document.querySelector('.prev');
+      const slides = document.querySelectorAll(".slide");
+let currentIndex = 0;
+const intervalTime = 4000; // 4 seconds
 
-let index = 0;
-
-function showSlide(i) {
-  slides.forEach(slide => slide.classList.remove('active'));
-  slides[i].classList.add('active');
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.toggle("active", i === index);
+  });
 }
 
-next.addEventListener('click', () => {
-  index = (index + 1) % slides.length;
-  showSlide(index);
-});
+function nextSlide() {
+  currentIndex = (currentIndex + 1) % slides.length;
+  showSlide(currentIndex);
+}
 
-prev.addEventListener('click', () => {
-  index = (index - 1 + slides.length) % slides.length;
-  showSlide(index);
-});
+// Auto slide
+setInterval(nextSlide, intervalTime);
+
 
     </script>
 
