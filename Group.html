@@ -410,6 +410,249 @@ html {
         font-size: 15px;
     }
 }
+.therapy-info-section {
+    max-width: 1100px;
+    margin: 70px auto;
+    padding: 0 20px;
+    display: grid;
+    gap: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Card Base */
+.therapy-info-card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.06);
+}
+
+/* Headings */
+.therapy-heading {
+    font-size: 28px;
+    color: #2f4f6f;
+    margin-bottom: 18px;
+}
+
+.therapy-heading span {
+    font-size: 15px;
+    font-weight: 500;
+    color: #7fa3c1;
+}
+
+/* Intro Text */
+.therapy-intro {
+    font-size: 17px;
+    color: #555;
+    margin-bottom: 18px;
+}
+
+/* Lists */
+.therapy-list {
+    list-style: none;
+    padding: 0;
+}
+
+.therapy-list li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.therapy-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+    color: #9bb7c8;
+}
+
+/* Light Background Card */
+.light-bg {
+    background: #f6fafc;
+}
+
+/* Soft Gradient Block */
+.soft-gradient {
+    background: linear-gradient(135deg, #f9fcfb, #eef5f7);
+    text-align: center;
+}
+
+.therapy-text {
+    max-width: 720px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .therapy-info-card {
+        padding: 26px;
+    }
+
+    .therapy-heading {
+        font-size: 22px;
+    }
+
+    .therapy-intro,
+    .therapy-text,
+    .therapy-list li {
+        font-size: 15px;
+    }
+}
+/* serv */
+
+.therapy-service {
+    font-family: 'Poppins', sans-serif;
+    background: #f8fafb;
+    padding: 90px 20px;
+}
+
+/* Header */
+.service-header {
+    max-width: 900px;
+    margin: 0 auto 70px;
+    text-align: center;
+}
+
+.service-header h1 {
+    font-size: 44px;
+    color: #2e4a66;
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+
+.service-header p {
+    font-size: 18px;
+    color: #6a7f93;
+    line-height: 1.7;
+}
+
+/* Split Layout */
+.service-split {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 50px;
+}
+
+/* Left */
+.service-left {
+    background: #ffffff;
+    padding: 45px;
+    border-radius: 24px;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.05);
+}
+
+.service-left h2 {
+    font-size: 26px;
+    margin-bottom: 22px;
+    color: #2e4a66;
+}
+
+.service-left ul {
+    list-style: none;
+    padding: 0;
+}
+
+.service-left ul li {
+    padding-left: 26px;
+    margin-bottom: 14px;
+    position: relative;
+    font-size: 16px;
+    color: #555;
+}
+
+.service-left ul li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: #9fb8c9;
+}
+
+/* Right */
+.service-right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.focus-box,
+.work-box {
+    padding: 36px;
+    border-radius: 22px;
+}
+
+.focus-box {
+    background: #eef5f8;
+}
+
+.work-box {
+    background: linear-gradient(135deg, #f9fbfa, #eef4f3);
+}
+
+.focus-box h3,
+.work-box h3 {
+    font-size: 22px;
+    color: #2e4a66;
+    margin-bottom: 16px;
+}
+
+.focus-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.focus-box ul li {
+    margin-bottom: 12px;
+    font-size: 15px;
+    color: #555;
+    position: relative;
+    padding-left: 22px;
+}
+
+.focus-box ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #9fb8c9;
+    font-size: 20px;
+}
+
+.work-box p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .service-split {
+        grid-template-columns: 1fr;
+    }
+
+    .service-header h1 {
+        font-size: 32px;
+    }
+
+    .service-left,
+    .focus-box,
+    .work-box {
+        padding: 28px;
+    }
+}
+
+
+
+
+
+
 
 
 </style>
@@ -589,43 +832,61 @@ html {
             </nav>
         </div><!-- End Mobile Menu -->
 
+<section class="therapy-service">
 
-      <section class="therapy-details">
+  <!-- Header -->
+  <div class="service-header">
+    <h1>Group Therapy </h1>
+   <p>Group therapy offers a space to share your experiences with others who understand what you’re going through. It’s a place to feel less alone, to learn from different perspectives, and to build insight and confidence in a setting that’s supportive and steady.</p>
+  </div>
 
-    <!-- Concerns Section -->
-     <div class="therapy-card">
-        <h2>Group Therapy</h2>
-        <ul>
-            <li>Women’s therapy groups</li>
-            <li>Mindfulness/meditation groups</li>
-            <li>Short-term support groups</li>
-            <li>Long-term process groups</li>
-            <li>Women’s empowerment groups</li>
-        </ul>
+  <!-- Content Split -->
+  <div class="service-split">
+
+    <!-- Left -->
+    <div class="service-left">
+      <h2>
+Group therapy formats include:
+</h2>
+      <ul>
+        <li>	Women’s therapy groups</li>
+        <li>	Mindfulness/meditation groups</li>
+        <li>	Short-term support groups</li>
+        <li>	Long-term process groups</li>
+        <li>	Women’s empowerment groups</li>
+       
+      </ul>
     </div>
 
-    <!-- Additional Focus Section -->
-    <div class="therapy-card">
-        <h2>Additional Areas of Clinical Focus</h2>
+    <!-- Right -->
+    <div class="service-right">
+      <div class="focus-box">
+        <h3>Additional Areas of Clinical Focus</h3>
         <ul>
-            <li>Performance-related concerns, including peak performance and performance anxiety</li>
-            <li>Cultural and identity-related stressors, including racial or societal pressures</li>
-            <li>Specific fears such as fear of flying or medical/health-related anxieties</li>
-            <li>Behavioural patterns that affect daily functioning including eating disorders</li>
-            <li>Difficulties linked to chronic stress or emotional overwhelm</li>
-            <li>Adjustment concerns following major life changes or transitions</li>
+          <li>Performance anxiety and peak performance concerns</li>
+          <li>Cultural and identity-related stressors</li>
+          <li>Specific fears such as flying or medical anxiety</li>
+          <li>Behavioural patterns affecting daily functioning</li>
+          <li>Chronic stress and emotional overwhelm</li>
+          <li>Adjustment concerns after major life changes</li>
         </ul>
-    </div>
+      </div>
 
-    <!-- How I Work Section -->
-    <div class="therapy-card">
-        <h2>How I Work</h2>
+      <div class="work-box">
+        <h3>How I Work</h3>
         <p>
-            Each session is 50 minutes, offered in-person or online. Think of it as time set aside — structured, supportive, and entirely yours.
+          Each session lasts 50 minutes and is offered both in-person and online.
+          It’s dedicated time — calm, structured, and centred entirely around you.
         </p>
+      </div>
     </div>
+
+  </div>
 
 </section>
+
+
+
 
 
 

@@ -373,6 +373,40 @@ html {
         font-size: 15px;
     }
 }
+/* Techniques Heading Inside Grid */
+.therapy-techniques-heading {
+    grid-column: 1 / -1;
+    background: #f5faf8;
+    padding: 40px 20px;
+    border-radius: 14px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.therapy-techniques-heading h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #2f3a3f;
+    max-width: 900px;
+    margin: 0 auto 10px;
+    line-height: 1.4;
+}
+
+.therapy-techniques-heading p {
+    font-size: 16px;
+    color: #7a8a8f;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .therapy-techniques-heading h1 {
+        font-size: 22px;
+    }
+
+    .therapy-techniques-heading p {
+        font-size: 14px;
+    }
+}
 
 </style>
 
@@ -562,7 +596,7 @@ html {
                         <div class="shape-3"></div>
                     </div>
        
-                    <h1>Service</h1>
+                    <h1>Services</h1>
                 </div>
             </div>
            
@@ -575,10 +609,8 @@ html {
   <div class="container">
 
     <h2 class="section-heading">Therapeutic Techniques</h2>
-    <p class="section-subtitle">
-If you're curious about some of the therapeutic techniques I specialise in, here’s a brief look at a few approaches I draw from in my work.
-</p>
-    <p class="section-subtitle" style="margin-top: -46px;">Evidence-based therapies tailored to your needs</p>
+   
+
 
     <div class="services-grid">
         <div class="service-card">
@@ -605,6 +637,8 @@ If you're curious about some of the therapeutic techniques I specialise in, here
                     Read More <span>→</span>
                 </a>
     </div>
+    
+      
       
         <div class="service-card">
         <img src="assets/images/icons/Group therapy.jpg" alt="">
@@ -614,6 +648,14 @@ If you're curious about some of the therapeutic techniques I specialise in, here
                     Read More <span>→</span>
                 </a>
     </div>
+        <!-- NEW HEADING ABOVE SCHEMA THERAPY -->
+      <div class="therapy-techniques-heading">
+        <h1>
+          If you're curious about some of the therapeutic techniques I specialise in,
+          here’s a brief look at a few approaches I draw from in my work.
+        </h1>
+   
+      </div>
 
       <div class="service-card">
         <img src="assets/images/icons/icon1.jpg" alt="">
