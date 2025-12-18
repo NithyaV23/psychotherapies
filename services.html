@@ -413,6 +413,111 @@ html {
 html {
   scroll-behavior: smooth;
 }
+.clinical-focus-section {
+  background: #f9fafb;
+  padding: 80px 20px;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+/* Heading */
+.focus-heading {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+.focus-heading h2 {
+  font-size: 36px;
+  color: #1f2933;
+  margin-bottom: 15px;
+}
+
+.focus-heading p {
+  font-size: 17px;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* Grid */
+.focus-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+/* Card */
+.focus-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 25px 25px 25px 45px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.focus-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.focus-card p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Dot Icon */
+.focus-card .dot {
+  position: absolute;
+  left: 20px;
+  top: 30px;
+  width: 10px;
+  height: 10px;
+  background: #5a8dee;
+  border-radius: 50%;
+}
+
+/* How I Work */
+.how-i-work {
+  margin-top: 80px;
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+}
+
+.how-i-work h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #1f2933;
+}
+
+.how-i-work p {
+  font-size: 18px;
+  color: #444;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .focus-heading h2,
+  .how-i-work h2 {
+    font-size: 28px;
+  }
+
+  .how-i-work {
+    padding: 35px 25px;
+  }
+}
+
 
 </style>
 
@@ -614,7 +719,6 @@ html {
     <section class="therapy-services">
   <div class="container">
 
-    <h2 class="section-heading">Therapeutic Techniques</h2>
    
 
 
@@ -642,13 +746,73 @@ html {
     <h3 id="group">Group Therapy</h3>
     <p>Group therapy offers a space to share your experiences with others who understand what you’re going through. It’s a place to feel less alone, to learn from different perspectives, and to build insight and confidence in a setting that’s supportive and steady.</p>
   </div>
+ 
+
         <!-- NEW HEADING ABOVE SCHEMA THERAPY -->
       <div class="therapy-techniques-heading">
-        <h1>
+       <section class="clinical-focus-section">
+  <div class="container">
+
+    <!-- Section Heading -->
+    <div class="focus-heading">
+      <h2>Additional Areas of Clinical Focus</h2>
+   
+    </div>
+
+    <!-- Focus Grid -->
+    <div class="focus-grid">
+
+      <div class="focus-card">
+        <span class="dot"></span>
+        <p>Performance-related concerns, including peak performance and performance anxiety</p>
+      </div>
+
+      <div class="focus-card">
+        <span class="dot"></span>
+        <p>Cultural and identity-related stressors, including racial or societal pressures</p>
+      </div>
+
+      <div class="focus-card">
+        <span class="dot"></span>
+        <p>Specific fears such as fear of flying or medical and health-related anxieties</p>
+      </div>
+
+      <div class="focus-card">
+        <span class="dot"></span>
+        <p>Behavioural patterns affecting daily functioning, including eating disorders</p>
+      </div>
+
+      <div class="focus-card">
+        <span class="dot"></span>
+        <p>Difficulties linked to chronic stress or emotional overwhelm</p>
+      </div>
+
+      <div class="focus-card">
+        <span class="dot"></span>
+        <p>Adjustment concerns following major life changes or transitions</p>
+      </div>
+
+    </div>
+
+    <!-- How I Work -->
+    <div class="how-i-work">
+      <h2>How I Work</h2>
+      <p>
+        Each session is <strong>50 minutes</strong>, offered both <strong>in-person</strong>
+        and <strong>online</strong>. Think of it as dedicated time — structured,
+        supportive, and entirely yours.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+            <h1 class="section-heading">Therapeutic Techniques</h1>
+        <h3>
           If you're curious about some of the therapeutic techniques I specialise in,
           here’s a brief look at a few approaches I draw from in my work.
-        </h1>
-        <p>Evidence-based therapies tailored to your needs</p>
+        </h3>
+       
       </div>
 
       <div class="service-card">
@@ -739,6 +903,7 @@ html {
         </p>
     </div>
 </section>
+  
 
 
 </section>
