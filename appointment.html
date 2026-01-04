@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Paid Consultation</title>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <style>
+    body { font-family: Arial; background:#f5f5f5; }
+    .box { max-width:420px; margin:50px auto; background:#fff; padding:20px; border-radius:8px; }
+    input, select, button {
+      width:100%; padding:10px; margin:10px 0;
+    }
+    button { background:#0A2540; color:#fff; border:none; cursor:pointer; }
+  </style>
+</head>
+<body>
+
+<div class="box">
+  <h2>Book a Paid Meeting</h2>
+
+  <input type="text" id="name" placeholder="Full Name" required>
+  <input type="email" id="email" placeholder="Email Address" required>
+
+  <select id="duration" required>
+    <option value="">Select Duration</option>
+    <option value="30">30 Minutes – ₹999</option>
+    <option value="60">60 Minutes – ₹1799</option>
+  </select>
+
+  <button onclick="payNow()">Pay & Book Meeting</button>
+</div>
+
+<script>
+function payNow() {
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let duration = document.getElementById("duration").value;
+
+  if (!name || !email || !duration) {
+    alert("Please fill all fields");
+    return;
+  }
+
+  // Step 1: Create Razorpay Order (SERVER decides amount)
+  fetch("create-order.php", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: `duration=${duration}&email=${email}`
+  })
+  .then(res => res.json())
+  .then(order => {
+
+    var options = {
+      "key": "YOUR_RAZORPAY_KEY_ID",
+      "amount": order.amount,
+      "currency": "INR",
+      "name": "Your Brand Name",
+      "description": "Paid Consultation",
+      "order_id": order.id,
+
+      "handler": function (response) {
+        // Step 2: Verify payment on server
+        fetch("verify-payment.php", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body:
+            `razorpay_payment_id=${response.razorpay_payment_id}` +
+            `&razorpay_order_id=${response.razorpay_order_id}` +
+            `&razorpay_signature=${response.razorpay_signature}` +
+            `&email=${email}`
+        })
+        .then(res => window.location = res.url);
+      },
+
+      "prefill": {
+        "name": name,
+        "email": email
+      },
+      "theme": {
+        "color": "#0A2540"
+      }
+    };
+
+    var rzp = new Razorpay(options);
+    rzp.open();
+  });
+}
+</script>
+
+</body>
+</html>
