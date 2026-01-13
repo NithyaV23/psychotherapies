@@ -416,67 +416,69 @@
     margin-bottom: 15px;
 }
 
-/* Therapeutic Approach Styling */
-.therapeutic-approach {
-    margin-top: 30px;
-    padding-top: 25px;
-    border-top: 1px solid #e5e5e5;
+
+.therapy-fullwidth {
+    width: 100%;
+    padding: 100px 20px;
+    background: linear-gradient(180deg, #f5f8f7, #eef3f2);
 }
 
-.therapeutic-approach .subtitle {
-    margin-top: 0;
+.therapy-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    color: #2f3e3a;
 }
 
-/* Ethical Note */
-.ethical-note {
-    font-style: italic;
-    font-size: 18px;
+.therapy-title {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.therapy-inner p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
+}
+
+.confidentiality-strip {
+    margin-top: 3rem;
+    padding-top: 1.2rem;
+    font-size: 0.85rem;
     color: #000;
-    margin-top: 15px;
-    
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    font-weight: 500; /* slightly bold */
 }
 
-/* Button */
-.theme-btn {
-    display: inline-block;
-    padding: 12px 28px;
-    background: #2a6f6f;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    font-size: 15px;
-    margin-top: 30px;
-    transition: background 0.3s ease;
-}
 
-.theme-btn:hover {
-    background: #1f5555;
-}
-
-/* Responsive */
-@media (max-width: 991px) {
-    .about-section {
-        padding: 60px 0;
+/* Tablet */
+@media (max-width: 768px) {
+    .therapy-title {
+        font-size: 1.7rem;
     }
 
-    .section-title {
-        font-size: 28px;
-    }
-
-    .subtitle {
-        font-size: 18px;
+    .therapy-inner p {
+        font-size: 1rem;
     }
 }
 
-@media (max-width: 576px) {
-    .section-title {
-        font-size: 24px;
+/* Mobile */
+@media (max-width: 480px) {
+    .therapy-fullwidth {
+        padding: 80px 15px;
     }
 
-    .description {
-        font-size: 15px;
+    .therapy-title {
+        font-size: 1.45rem;
+    }
+
+    .confidentiality-strip {
+        font-size: 0.8rem;
     }
 }
+
+
 
 
 </style>
@@ -674,29 +676,7 @@
                         Staying engaged with new research and emerging therapeutic developments allows effective practices to be integrated thoughtfully, so the support you receive remains nuanced and clinically refined.
                     </p>
 
-                    <!-- Therapeutic Approach -->
-                    <div class="therapeutic-approach">
-
-                        <h5 class="subtitle">Therapeutic Approach</h5>
-
-                        <p class="description">
-                            I view therapy as a collaborative process: one that requires clarity, patience, and respect. My role is to listen with empathy, to ask the questions that matter, and to create a structured yet compassionate space where new possibilities for change can emerge.
-                        </p>
-
-                        <p class="description">
-                            The work we do together is grounded in evidence-based methods, but held with warmth and steadiness that makes honest exploration feel possible. In-person or online, I show up with the same care, presence, and calm, so you feel supported wherever you are.
-                        </p>
-
-                        <p class="description">
-                            Finding the right therapist is deeply personal. If I am not the right fit, I will guide you toward someone who may be — because what matters most is that you feel supported and understood.
-                        </p>
-
-                        <p class="ethical-note">
-                            “Your personal information is protected under professional ethical guidelines”
-                        </p>
-
-                    </div>
-
+                   
                     <div class="btn-box">
                         <a href="contact.html" class="theme-btn">Book a Session</a>
                     </div>
@@ -706,6 +686,38 @@
 
         </div>
     </div>
+</section>
+
+<section class="therapy-fullwidth">
+
+    <div class="therapy-inner">
+
+        <h2 class="therapy-title">Therapeutic Approach</h2>
+
+        <p>
+            I view therapy as a collaborative process: one that requires clarity, patience, and respect.
+            My role is to listen with empathy, to ask the questions that matter, and to create a structured
+            yet compassionate space where new possibilities for change can emerge.
+        </p>
+
+        <p>
+            The work we do together is grounded in evidence-based methods, but held with warmth and
+            steadiness that makes honest exploration feel possible. In-person or online, I show up with
+            the same care, presence, and calm, so you feel supported wherever you are.
+        </p>
+
+        <p>
+            Finding the right therapist is deeply personal. If I am not the right fit, I will guide you
+            toward someone who may be — because what matters most is that you feel supported and
+            understood.
+        </p>
+
+        <div class="confidentiality-strip">
+            Your personal information is protected under professional ethical guidelines.
+        </div>
+
+    </div>
+
 </section>
 
 
